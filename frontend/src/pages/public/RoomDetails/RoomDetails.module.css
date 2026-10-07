@@ -1,0 +1,1255 @@
+.roomDetails {
+   max-width: 1200px;
+   margin: 0 auto;
+   margin-top: 1.75rem;
+   padding: 3rem 1rem;
+}
+
+/* Back Button */
+.backButton {
+   margin-bottom: 2rem;
+}
+
+/* Gallery */
+.gallery {
+   margin-bottom: 2rem;
+   border-radius: 16px;
+   overflow: hidden;
+   position: relative;
+}
+
+.gallery__main {
+   height: 500px;
+   background: #f1f5f9;
+}
+
+.gallery__mainImage {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.gallery__thumbnails {
+   display: flex;
+   gap: 1rem;
+   padding: 1rem;
+   background: white;
+   border: 1px solid #e2e8f0;
+   border-top: none;
+   border-radius: 0 0 16px 16px;
+}
+
+.gallery__thumbnail {
+   width: 100px;
+   height: 75px;
+   border-radius: 8px;
+   border: 2px solid transparent;
+   padding: 0;
+   cursor: pointer;
+   overflow: hidden;
+   background: none;
+   transition: all 0.2s ease;
+}
+
+.gallery__thumbnail:hover {
+   border-color: #cbd5e1;
+}
+
+.gallery__thumbnail--active {
+   border-color: #3b82f6;
+}
+
+.gallery__thumbnail img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* Content Layout */
+.content {
+   display: grid;
+   grid-template-columns: 1fr 400px;
+   gap: 3rem;
+}
+
+/* Header */
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-bottom: 2rem;
+}
+
+.title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #1e293b;
+   margin-bottom: 0.5rem;
+   line-height: 1.2;
+}
+
+.location {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   color: #64748b;
+   margin-bottom: 0.5rem;
+}
+
+.rating {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   color: #f59e0b;
+   font-weight: 600;
+}
+
+.reviews {
+   color: #64748b;
+   font-weight: normal;
+   margin-left: 0.25rem;
+}
+
+.headerActions {
+   display: flex;
+   gap: 0.5rem;
+}
+
+/* Details */
+.details {
+   display: flex;
+   gap: 3rem;
+   padding: 1.5rem;
+   background: #f8fafc;
+   border-radius: 12px;
+   margin-bottom: 2rem;
+}
+
+.details__item {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.details__label {
+   display: block;
+   font-size: 0.875rem;
+   color: #64748b;
+   margin-bottom: 0.25rem;
+}
+
+.details__value {
+   font-size: 1rem;
+   font-weight: 600;
+   color: #1e293b;
+}
+
+/* Description */
+.description {
+   margin-bottom: 2rem;
+}
+
+.description__text {
+   color: #475569;
+   line-height: 1.7;
+   white-space: pre-line;
+}
+
+/* Amenities */
+.amenities {
+   margin-bottom: 2rem;
+}
+
+.amenities__grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   gap: 1rem;
+}
+
+.amenity {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+   padding: 0.75rem;
+   background: #f8fafc;
+   border-radius: 8px;
+   color: #1e293b;
+   transition: all 0.2s ease;
+}
+
+.amenity:hover {
+   background: #f1f5f9;
+}
+
+.amenity--unavailable {
+   opacity: 0.5;
+}
+
+.amenity__badge {
+   margin-left: auto;
+   font-size: 0.75rem;
+   color: #ef4444;
+   font-weight: 500;
+}
+
+/* Policies */
+.policies {
+   margin-bottom: 2rem;
+}
+
+.policies__list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.policy {
+   display: flex;
+   align-items: flex-start;
+   gap: 0.75rem;
+   margin-bottom: 0.75rem;
+   color: #475569;
+}
+
+.policy:last-child {
+   margin-bottom: 0;
+}
+
+/* Reviews */
+.reviews__summary {
+   display: flex;
+   gap: 3rem;
+   margin-bottom: 1.5rem;
+}
+
+.reviews__rating {
+   text-align: center;
+}
+
+.reviews__ratingValue {
+   display: block;
+   font-size: 3rem;
+   font-weight: 700;
+   color: #1e293b;
+   line-height: 1;
+}
+
+.reviews__ratingLabel {
+   display: block;
+   font-size: 0.875rem;
+   color: #64748b;
+   margin-top: 0.25rem;
+}
+
+.reviews__stats {
+   flex: 1;
+}
+
+.reviews__stat {
+   margin-bottom: 1rem;
+}
+
+.reviews__stat:last-child {
+   margin-bottom: 0;
+}
+
+.reviews__stat span:first-child {
+   display: block;
+   font-size: 0.875rem;
+   color: #64748b;
+   margin-bottom: 0.25rem;
+}
+
+.reviews__bar {
+   height: 6px;
+   background: #e2e8f0;
+   border-radius: 3px;
+   overflow: hidden;
+}
+
+.reviews__barFill {
+   height: 100%;
+   background: #f59e0b;
+   border-radius: 3px;
+}
+
+/* Sidebar */
+.bookingCard {
+   margin-bottom: 1.5rem;
+}
+
+.bookingCard__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1.5rem;
+}
+
+.bookingCard__price {
+   display: flex;
+   align-items: baseline;
+   gap: 0.25rem;
+}
+
+.bookingCard__priceValue {
+   font-size: 2rem;
+   font-weight: 700;
+   color: #3b82f6;
+}
+
+.bookingCard__pricePeriod {
+   font-size: 0.875rem;
+   color: #64748b;
+}
+
+.bookingCard__availabilityBadge {
+   font-size: 0.75rem;
+   font-weight: 600;
+   color: #16a34a;
+   background: #dcfce7;
+   padding: 0.25rem 0.75rem;
+   border-radius: 20px;
+}
+
+/* Booking Form */
+.bookingForm {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+.bookingForm__dates {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+}
+
+.bookingForm__field {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+.bookingForm__label {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: #475569;
+}
+
+.bookingForm__input,
+.bookingForm__select,
+.bookingForm__textarea {
+   width: 100%;
+   padding: 0.75rem;
+   border: 1px solid #e2e8f0;
+   border-radius: 8px;
+   font-size: 0.95rem;
+   color: #1e293b;
+   background: white;
+   transition: all 0.2s ease;
+}
+
+.bookingForm__input:focus,
+.bookingForm__select:focus,
+.bookingForm__textarea:focus {
+   outline: none;
+   border-color: #3b82f6;
+   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.bookingForm__textarea {
+   resize: vertical;
+   min-height: 80px;
+   font-family: inherit;
+}
+
+/* Price Breakdown */
+.priceBreakdown {
+   border-top: 1px solid #e2e8f0;
+   padding-top: 1.5rem;
+}
+
+.priceBreakdown__item {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 0.75rem;
+   font-size: 0.95rem;
+   color: #475569;
+}
+
+.priceBreakdown__total {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 1rem;
+   padding-top: 1rem;
+   border-top: 1px solid #e2e8f0;
+   font-size: 1.125rem;
+   font-weight: 600;
+   color: #1e293b;
+}
+
+.bookingForm__button {
+   margin-top: 0.5rem;
+}
+
+.bookingForm__note {
+   font-size: 0.75rem;
+   color: #64748b;
+   text-align: center;
+   margin-top: 1rem;
+}
+
+/* Contact Card */
+.contactCard__info {
+   margin-bottom: 1.5rem;
+}
+
+.contactCard__host {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin-bottom: 1rem;
+}
+
+.contactCard__hostImage {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.contactCard__hostName {
+   font-size: 1rem;
+   font-weight: 600;
+   color: #1e293b;
+   margin-bottom: 0.25rem;
+}
+
+.contactCard__hostRole {
+   font-size: 0.875rem;
+   color: #64748b;
+}
+.contactCard__contactItem {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: 0.875rem;
+   color: #475569;
+}
+
+.contactCard__response {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: 0.875rem;
+   color: #475569;
+   padding: 0.75rem;
+   background: #f8fafc;
+   border-radius: 8px;
+}
+
+/* Loading & Error States */
+.loading {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 500px;
+}
+
+.notFound {
+   text-align: center;
+   padding: 4rem 2rem;
+}
+
+/* Room Selection Modal Styles */
+.roomSelectionModal {
+   padding: 0.5rem;
+}
+
+.roomSelectionModal__header {
+   background: #f8fafc;
+   border-radius: 12px;
+   padding: 1.5rem;
+   margin-bottom: 1.5rem;
+   border: 1px solid #e2e8f0;
+}
+
+.roomSelectionModal__dates {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+.roomSelectionModal__dateItem {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: 0.95rem;
+   color: #475569;
+}
+
+.roomSelectionModal__dateItem strong {
+   color: #1e293b;
+   font-weight: 600;
+}
+
+.roomSelectionModal__price {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 1rem;
+   border-top: 1px solid #e2e8f0;
+}
+
+.roomSelectionModal__priceLabel {
+   font-size: 1rem;
+   font-weight: 600;
+   color: #1e293b;
+}
+
+.roomSelectionModal__priceValue {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #3b82f6;
+}
+
+.roomSelectionModal__content {
+   max-height: 60vh;
+   overflow-y: auto;
+   padding-right: 0.5rem;
+}
+
+.roomSelectionModal__subtitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: #1e293b;
+   margin-bottom: 0.5rem;
+}
+
+.roomSelectionModal__description {
+   color: #64748b;
+   margin-bottom: 1.5rem;
+   font-size: 0.95rem;
+}
+
+.roomSelectionModal__rooms {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+   margin-bottom: 1.5rem;
+}
+
+.roomSelectionModal__room {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   background: white;
+   border: 2px solid #e2e8f0;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all 0.2s ease;
+   position: relative;
+}
+
+.roomSelectionModal__room:hover {
+   border-color: #cbd5e1;
+   background: #f8fafc;
+}
+
+.roomSelectionModal__room--selected {
+   border-color: #3b82f6;
+   background: #eff6ff;
+}
+
+.roomSelectionModal__roomInfo {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   flex: 1;
+}
+
+.roomSelectionModal__roomNumber {
+   font-size: 1.125rem;
+   font-weight: 600;
+   color: #1e293b;
+   margin-bottom: 0.25rem;
+}
+
+.roomSelectionModal__roomFloor {
+   font-size: 0.875rem;
+   color: #64748b;
+}
+
+.roomSelectionModal__selectedIndicator {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   color: #16a34a;
+   font-weight: 500;
+   font-size: 0.875rem;
+}
+
+.roomSelectionModal__actions {
+   display: flex;
+   justify-content: flex-end;
+   gap: 1rem;
+   padding-top: 1.5rem;
+   border-top: 1px solid #e2e8f0;
+}
+
+.roomSelectionModal__empty {
+   text-align: center;
+   padding: 3rem 1rem;
+}
+
+.roomSelectionModal__emptyIcon {
+   color: #cbd5e1;
+   margin-bottom: 1rem;
+}
+
+.roomSelectionModal__emptyTitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: #1e293b;
+   margin-bottom: 0.5rem;
+}
+
+.roomSelectionModal__emptyMessage {
+   color: #64748b;
+   margin-bottom: 1.5rem;
+   max-width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* Scrollbar styling for modal content */
+.roomSelectionModal__content::-webkit-scrollbar {
+   width: 6px;
+}
+
+.roomSelectionModal__content::-webkit-scrollbar-track {
+   background: #f1f5f9;
+   border-radius: 3px;
+}
+
+.roomSelectionModal__content::-webkit-scrollbar-thumb {
+   background: #cbd5e1;
+   border-radius: 3px;
+}
+
+.roomSelectionModal__content::-webkit-scrollbar-thumb:hover {
+   background: #94a3b8;
+}
+
+/* Reviews Section */
+.reviewsSection {
+   margin-top: 4rem;
+   padding-top: 2rem;
+   border-top: 1px solid #e2e8f0;
+}
+
+.reviewsSection__title {
+   font-size: 1.75rem;
+   font-weight: 700;
+   color: #1e293b;
+   margin-bottom: 1.5rem;
+}
+
+.reviewsList {
+   display: grid;
+   gap: 1.5rem;
+}
+/* =========================
+   Play Store Review Style
+========================= */
+
+.playReview {
+   padding: 16px 0;
+   border-bottom: 1px solid #e5e7eb;
+}
+
+.playReview:last-child {
+   border-bottom: none;
+}
+
+.playReview__header {
+   display: flex;
+   gap: 12px;
+   align-items: flex-start;
+}
+
+.playReview__avatar {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   object-fit: cover;
+   flex-shrink: 0;
+}
+
+.playReview__meta {
+   flex: 1;
+}
+
+.playReview__name {
+   font-size: 0.95rem;
+   font-weight: 600;
+   color: #202124;
+   margin-bottom: 4px;
+}
+
+.playReview__ratingRow {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.playReview__stars {
+   display: flex;
+   gap: 2px;
+}
+
+.playReview__star {
+   color: #d1d5db;
+}
+
+.playReview__starActive {
+   color: #fbbc04; /* Google Play yellow */
+}
+
+.playReview__date {
+   font-size: 0.75rem;
+   color: #5f6368;
+}
+
+.playReview__comment {
+   margin-left: 52px; /* aligns with text under name */
+   margin-top: 8px;
+   font-size: 0.875rem;
+   line-height: 1.6;
+   color: #3c4043;
+   white-space: pre-wrap;
+}
+
+.notFound__title {
+   color: #1e293b;
+   font-size: 2rem;
+   font-weight: 700;
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+   .content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+   }
+
+   .bookingCard {
+      position: static;
+   }
+
+   .details {
+      flex-wrap: wrap;
+      gap: 1.5rem;
+   }
+}
+
+@media (max-width: 768px) {
+   .roomDetails {
+      padding: 1rem;
+      padding-top: 2.5rem;
+   }
+
+   .gallery__main {
+      height: 300px;
+   }
+
+   .gallery__thumbnails {
+      overflow-x: auto;
+      padding: 0.75rem;
+   }
+
+   .gallery__thumbnail {
+      width: 80px;
+      height: 60px;
+      flex-shrink: 0;
+   }
+
+   .title {
+      font-size: 2rem;
+   }
+
+   .header {
+      flex-direction: column;
+      gap: 1rem;
+   }
+
+   .headerActions {
+      align-self: flex-end;
+   }
+
+   .amenities__grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+   }
+
+   .reviews__summary {
+      flex-direction: column;
+      gap: 1.5rem;
+   }
+
+   .roomSelectionModal__room {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+   }
+
+   .roomSelectionModal__roomInfo {
+      width: 100%;
+   }
+
+   .roomSelectionModal__selectedIndicator {
+      align-self: flex-start;
+   }
+
+   .roomSelectionModal__actions {
+      flex-direction: column;
+   }
+
+   .roomSelectionModal__actions button {
+      width: 100%;
+   }
+}
+
+@media (max-width: 480px) {
+   .roomDetails {
+      max-width: 100vw;
+      padding: 2em 0.5rem;
+   }
+
+   .details {
+      flex-direction: column;
+      gap: 1rem;
+   }
+
+   .amenities__grid {
+      grid-template-columns: 1fr;
+   }
+
+   .bookingForm__dates {
+      grid-template-columns: 1fr;
+   }
+
+   .contactCard__host {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .roomSelectionModal__dates {
+      flex-direction: column;
+      gap: 0.75rem;
+   }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+   .roomDetails {
+      background: #0f172a;
+   }
+
+   .gallery__thumbnails {
+      background: #1e293b;
+      border-color: #334155;
+   }
+
+   .title {
+      color: #f1f5f9;
+   }
+
+   .location,
+   .reviews {
+      color: #94a3b8;
+   }
+
+   .details {
+      background: #1e293b;
+   }
+
+   .details__value {
+      color: #f1f5f9;
+   }
+
+   .description__text {
+      color: #cbd5e1;
+   }
+
+   .amenity {
+      background: #1e293b;
+      color: #f1f5f9;
+   }
+
+   .amenity:hover {
+      background: #334155;
+   }
+
+   .policy {
+      color: #cbd5e1;
+   }
+
+   .reviews__ratingValue {
+      color: #f1f5f9;
+   }
+
+   .bookingCard {
+      background: #1e293b;
+      border-color: #334155;
+   }
+
+   .bookingCard__priceValue {
+      color: #60a5fa;
+   }
+
+   .bookingForm__input,
+   .bookingForm__select,
+   .bookingForm__textarea {
+      background: #0f172a;
+      border-color: #334155;
+      color: #f1f5f9;
+   }
+
+   .priceBreakdown__item {
+      color: #cbd5e1;
+   }
+
+   .priceBreakdown__total {
+      color: #f1f5f9;
+      border-color: #334155;
+   }
+
+   .bookingForm__note {
+      color: #94a3b8;
+   }
+
+   .contactCard {
+      background: #1e293b;
+      border-color: #334155;
+   }
+
+   .contactCard__hostName {
+      color: #f1f5f9;
+   }
+
+   .contactCard__response {
+      background: #1e293b;
+      color: #cbd5e1;
+   }
+
+   .reviews__bar {
+      background: #334155;
+   }
+
+   /* Room Selection Modal Dark Mode */
+   .roomSelectionModal__header {
+      background: #1e293b;
+      border-color: #334155;
+   }
+
+   .roomSelectionModal__dateItem {
+      color: #cbd5e1;
+   }
+
+   .roomSelectionModal__dateItem strong {
+      color: #f1f5f9;
+   }
+
+   .roomSelectionModal__priceLabel {
+      color: #f1f5f9;
+   }
+
+   .roomSelectionModal__subtitle {
+      color: #f1f5f9;
+   }
+
+   .roomSelectionModal__description {
+      color: #94a3b8;
+   }
+
+   .roomSelectionModal__room {
+      background: #1e293b;
+      border-color: #334155;
+   }
+
+   .roomSelectionModal__room:hover {
+      background: #334155;
+      border-color: #475569;
+   }
+
+   .roomSelectionModal__room--selected {
+      background: #1e3a8a;
+      border-color: #3b82f6;
+   }
+
+   .roomSelectionModal__roomNumber {
+      color: #f1f5f9;
+   }
+
+   .roomSelectionModal__roomFloor {
+      color: #94a3b8;
+   }
+
+   .roomSelectionModal__emptyIcon {
+      color: #475569;
+   }
+
+   .roomSelectionModal__emptyTitle {
+      color: #f1f5f9;
+   }
+
+   .roomSelectionModal__emptyMessage {
+      color: #94a3b8;
+   }
+
+   /* Scrollbar dark mode */
+   .roomSelectionModal__content::-webkit-scrollbar-track {
+      background: #1e293b;
+   }
+
+   .roomSelectionModal__content::-webkit-scrollbar-thumb {
+      background: #475569;
+   }
+
+   .roomSelectionModal__content::-webkit-scrollbar-thumb:hover {
+      background: #64748b;
+   }
+}
+
+/* Dark Mode Styles - Global .dark support */
+:global(.dark) .roomDetails {
+   background: #0f172a;
+}
+
+:global(.dark) .title {
+   color: #f1f5f9;
+}
+
+:global(.dark) .location {
+   color: #94a3b8;
+}
+
+:global(.dark) .reviews {
+   color: #94a3b8;
+}
+
+:global(.dark) .details {
+   background: #1e293b;
+}
+
+:global(.dark) .details__label {
+   color: #94a3b8;
+}
+
+:global(.dark) .details__value {
+   color: #f1f5f9;
+}
+
+:global(.dark) .description__text {
+   color: #cbd5e1;
+}
+
+:global(.dark) .amenity {
+   background: #1e293b;
+   color: #f1f5f9;
+}
+
+:global(.dark) .amenity:hover {
+   background: #334155;
+}
+
+:global(.dark) .policy {
+   color: #94a3b8;
+}
+
+:global(.dark) .reviews__ratingValue {
+   color: #f1f5f9;
+}
+
+:global(.dark) .reviews__ratingLabel {
+   color: #94a3b8;
+}
+
+:global(.dark) .reviews__stat span:first-child {
+   color: #94a3b8;
+}
+
+:global(.dark) .reviews__bar {
+   background: #334155;
+}
+
+:global(.dark) .bookingCard__priceValue {
+   color: #60a5fa;
+}
+
+:global(.dark) .bookingCard__pricePeriod {
+   color: #94a3b8;
+}
+
+:global(.dark) .bookingCard__availabilityBadge {
+   background: #064e3b;
+   color: #6ee7b7;
+}
+
+:global(.dark) .bookingForm__label {
+   color: #cbd5e1;
+}
+
+:global(.dark) .bookingForm__input,
+:global(.dark) .bookingForm__select,
+:global(.dark) .bookingForm__textarea {
+   background: #111827;
+   border-color: #334155;
+   color: #f9fafb;
+}
+
+:global(.dark) .bookingForm__input:focus,
+:global(.dark) .bookingForm__select:focus,
+:global(.dark) .bookingForm__textarea:focus {
+   border-color: #3b82f6;
+   background: #0f172a;
+}
+
+:global(.dark) .priceBreakdown {
+   border-top-color: #334155;
+}
+
+:global(.dark) .priceBreakdown__item {
+   color: #94a3b8;
+}
+
+:global(.dark) .priceBreakdown__total {
+   border-top-color: #334155;
+   color: #f1f5f9;
+}
+
+:global(.dark) .contactCard__hostName {
+   color: #f1f5f9;
+}
+
+:global(.dark) .contactCard__hostRole,
+:global(.dark) .contactCard__contactItem {
+   color: #94a3b8;
+}
+
+:global(.dark) .contactCard__response {
+   background: #1e293b;
+   color: #cbd5e1;
+}
+
+:global(.dark) .playReview {
+   border-bottom-color: #334155;
+}
+
+:global(.dark) .playReview__name {
+   color: #f1f5f9;
+}
+
+:global(.dark) .playReview__date {
+   color: #94a3b8;
+}
+
+:global(.dark) .playReview__comment {
+   color: #cbd5e1;
+}
+
+:global(.dark) .gallery__main {
+   background: #1e293b;
+}
+
+:global(.dark) .gallery__thumbnails {
+   background: #1e293b;
+   border-color: #334155;
+}
+
+:global(.dark) .gallery__thumbnail:hover {
+   border-color: #475569;
+}
+
+:global(.dark) .roomSelectionModal__header {
+   background: #1e293b;
+   border-color: #334155;
+}
+
+:global(.dark) .roomSelectionModal__dateItem {
+   color: #94a3b8;
+}
+
+:global(.dark) .roomSelectionModal__dateItem strong {
+   color: #f1f5f9;
+}
+
+:global(.dark) .roomSelectionModal__price {
+   border-top-color: #334155;
+}
+
+:global(.dark) .roomSelectionModal__priceLabel {
+   color: #f1f5f9;
+}
+
+:global(.dark) .roomSelectionModal__priceValue {
+   color: #60a5fa;
+}
+
+:global(.dark) .roomSelectionModal__subtitle {
+   color: #f1f5f9;
+}
+
+:global(.dark) .roomSelectionModal__description {
+   color: #94a3b8;
+}
+
+:global(.dark) .roomSelectionModal__room {
+   background: #111827;
+   border-color: #334155;
+}
+
+:global(.dark) .roomSelectionModal__room:hover {
+   background: #1e293b;
+   border-color: #475569;
+}
+
+:global(.dark) .roomSelectionModal__room--selected {
+   border-color: #3b82f6;
+   background: #1e3a8a;
+}
+
+:global(.dark) .roomSelectionModal__roomNumber {
+   color: #f1f5f9;
+}
+
+:global(.dark) .roomSelectionModal__roomFloor {
+   color: #94a3b8;
+}
+
+:global(.dark) .roomSelectionModal__actions {
+   border-top-color: #334155;
+}
+
+:global(.dark) .roomSelectionModal__emptyTitle {
+   color: #f1f5f9;
+}
+
+:global(.dark) .roomSelectionModal__emptyMessage {
+   color: #94a3b8;
+}
+
+:global(.dark) .reviewsSection {
+   border-top-color: #334155;
+}
+
+:global(.dark) .reviewsSection__title {
+   color: #f1f5f9;
+}
