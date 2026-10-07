@@ -1,0 +1,280 @@
+.details {
+   max-width: 1400px;
+   padding: 24px 0;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-bottom: 32px;
+   gap: 20px;
+}
+
+.breadcrumb {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   font-size: 0.875rem;
+   color: #6b7280;
+   margin-bottom: 12px;
+}
+
+.breadcrumbLink {
+   color: var(--primary-600);
+   text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+   text-decoration: underline;
+}
+
+.title {
+   font-size: 2rem;
+   font-weight: 700;
+   color: #111827;
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.status {
+   padding: 6px 16px;
+   font-size: 0.875rem;
+   font-weight: 600;
+   border-radius: 9999px;
+   text-transform: capitalize;
+}
+
+.status--pending {
+   background: #fffbeb;
+   color: #d97706;
+}
+
+.status--paid {
+   background: #f0fdf4;
+   color: #16a34a;
+}
+
+.status--cancelled {
+   background: #fef2f2;
+   color: #ef4444;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: 1.5fr 1fr;
+   gap: 24px;
+}
+
+.section {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.card {
+   padding: 24px;
+}
+
+.cardTitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: #111827;
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+/* Info Grids */
+.infoGrid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+}
+
+.infoItem {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.infoLabel {
+   font-size: 0.875rem;
+   color: #6b7280;
+   font-weight: 500;
+}
+
+.infoValue {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   font-size: 1rem;
+   color: #111827;
+   font-weight: 600;
+}
+
+/* Guest Header Specifics */
+.guestHeader {
+   display: flex;
+   gap: 16px;
+   margin-bottom: 24px;
+   align-items: center;
+}
+
+.guestAvatar {
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 2px solid #e5e7eb;
+   background: #f3f4f6;
+}
+
+.guestMeta {
+   display: flex;
+   flex-direction: column;
+}
+
+.guestMeta .cardTitle {
+   margin-bottom: 0px;
+}
+
+.guestSubtitle {
+   font-size: 0.875rem;
+   color: #6b7280;
+}
+
+/* Hotel/Room Card Specifics */
+.hotelHeader {
+   display: flex;
+   gap: 16px;
+   margin-bottom: 20px;
+}
+
+.hotelImage {
+   width: 80px;
+   height: 80px;
+   border-radius: 12px;
+   object-fit: cover;
+   background: #f3f4f6;
+}
+
+.hotelMeta {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.hotelName {
+   font-size: 1.125rem;
+   font-weight: 700;
+   color: #111827;
+}
+
+.hotelLocation {
+   font-size: 0.875rem;
+   color: #6b7280;
+}
+
+/* Price Breakdown */
+.priceList {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.priceRow {
+   display: flex;
+   justify-content: space-between;
+   font-size: 0.95rem;
+   color: #4b5563;
+}
+
+.priceTotal {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 12px;
+   padding-top: 12px;
+   border-top: 2px solid #e5e7eb;
+   font-size: 1.25rem;
+   font-weight: 700;
+   color: var(--primary-600);
+}
+
+@media (max-width: 1024px) {
+   .grid {
+      grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 640px) {
+   .guestHeader,
+   .header {
+      flex-direction: column;
+   }
+
+   .guestHeader {
+      align-items: flex-start;
+   }
+
+   .guestHeader img {
+      align-self: center;
+   }
+
+   .infoGrid {
+      grid-template-columns: 1fr;
+   }
+
+   .title {
+      font-size: 1.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+   }
+}
+
+/* Dark Mode Overrides */
+:global(.dark) .title,
+:global(.dark) .cardTitle,
+:global(.dark) .infoValue,
+:global(.dark) .hotelName {
+   color: #f1f5f9;
+}
+
+:global(.dark) .breadcrumb,
+:global(.dark) .infoLabel,
+:global(.dark) .guestSubtitle,
+:global(.dark) .hotelLocation,
+:global(.dark) .priceRow {
+   color: #94a3b8;
+}
+
+:global(.dark) .guestAvatar {
+   border-color: #334155;
+   background: #1e293b;
+}
+
+:global(.dark) .hotelImage {
+   background: #1e293b;
+}
+
+:global(.dark) .status--pending {
+   background: rgba(217, 119, 6, 0.2);
+   color: #fbbf24;
+}
+
+:global(.dark) .status--paid {
+   background: rgba(22, 163, 74, 0.2);
+   color: #4ade80;
+}
+
+:global(.dark) .status--cancelled {
+   background: rgba(239, 68, 68, 0.2);
+   color: #f87171;
+}
+
+:global(.dark) .priceTotal {
+   border-top-color: #334155;
+}
