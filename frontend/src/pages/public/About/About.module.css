@@ -1,0 +1,199 @@
+.about {
+   background: white;
+   padding-bottom: 5rem;
+}
+
+.hero {
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+   background-size: cover;
+   background-position: center;
+   height: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   margin-bottom: 4rem;
+   min-width: 100vw;
+}
+
+.heroTitle {
+   font-size: 3rem;
+   font-weight: 800;
+   margin-bottom: 1rem;
+   letter-spacing: -0.025em;
+}
+
+.heroSubtitle {
+   font-size: 1.25rem;
+   color: #e5e7eb;
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+.section {
+   padding: 2rem 1rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.missionGrid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2rem;
+}
+
+@media (max-width: 768px) {
+   .missionGrid {
+      grid-template-columns: 1fr;
+   }
+}
+
+.missionCard {
+   background: white;
+   padding: 2.5rem;
+   border-radius: 1rem;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+   border: 1px solid #f3f4f6;
+   transition: transform 0.2s;
+}
+
+.missionCard:hover {
+   transform: translateY(-5px);
+}
+
+.cardIcon {
+   background: #eff6ff;
+   color: #2563eb;
+   width: 48px;
+   height: 48px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+   font-size: 1.5rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+   color: #1f2937;
+}
+
+.cardText {
+   color: #6b7280;
+   line-height: 1.8;
+}
+
+.statsSection {
+   background: #f8fafc;
+   padding: 5rem 1rem;
+   margin-top: 5rem;
+}
+
+.statsGrid {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2rem;
+}
+
+@media (max-width: 768px) {
+   .statsGrid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 480px) {
+   .statsGrid {
+      grid-template-columns: 1fr;
+   }
+}
+
+/* Dark Mode Styles */
+:global(.dark) .about {
+   background: #0f172a;
+}
+
+:global(.dark) .missionCard {
+   background: #1e293b;
+   border-color: #334155;
+}
+
+:global(.dark) .cardIcon {
+   background: #334155;
+   color: #60a5fa;
+}
+
+:global(.dark) .cardTitle {
+   color: #f1f5f9;
+}
+
+:global(.dark) .cardText {
+   color: #94a3b8;
+}
+
+:global(.dark) .statsSection {
+   background: #1e293b;
+}
+
+:global(.dark) .statNumber {
+   color: #60a5fa;
+}
+
+:global(.dark) .statLabel {
+   color: #94a3b8;
+}
+
+:global(.dark) .storyTitle {
+   color: #f1f5f9;
+}
+
+:global(.dark) .storyText {
+   color: #cbd5e1;
+}
+
+.statItem {
+   text-align: center;
+}
+
+.statNumber {
+   font-size: 2.5rem;
+   font-weight: 800;
+   color: #2563eb;
+   margin-bottom: 0.5rem;
+}
+
+.statLabel {
+   color: #64748b;
+   font-weight: 500;
+   font-size: 0.95rem;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+
+.story {
+   margin-top: 5rem;
+   text-align: center;
+}
+
+.storyContent {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.storyTitle {
+   font-size: 2.25rem;
+   font-weight: 800;
+   color: #1e293b;
+   margin-bottom: 1.5rem;
+}
+
+.storyText {
+   color: #475569;
+   font-size: 1.125rem;
+   line-height: 1.8;
+}
