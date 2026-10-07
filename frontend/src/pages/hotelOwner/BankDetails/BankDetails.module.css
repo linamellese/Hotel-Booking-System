@@ -1,0 +1,99 @@
+.container {
+   max-width: 500px;
+}
+
+.header {
+   margin-bottom: 2rem;
+}
+
+.title {
+   font-size: 1.875rem;
+   font-weight: 700;
+   color: #111827;
+}
+
+.subtitle {
+   color: #6b7280;
+   margin-top: 0.5rem;
+}
+
+.card {
+   background: white;
+   padding: 2rem;
+   border-radius: 12px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+   border: 1px solid #e5e7eb;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+}
+.selectInput__contanier {
+   margin-bottom: 1rem;
+}
+
+.selectInput {
+   width: 100%;
+   padding: 0.75rem 1rem;
+   border: 1px solid #e5e7eb;
+   border-radius: 8px;
+   background-color: white;
+   font-size: 0.875rem;
+   color: #1f2937;
+   transition: all 0.2s;
+}
+
+.selectInput:focus {
+   outline: none;
+   border-color: #3b82f6;
+   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.label {
+   display: block;
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: #374151;
+   margin-bottom: 0.5rem;
+}
+
+.actions {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+   .container {
+      padding: 1rem;
+   }
+
+   .card {
+      padding: 1.5rem;
+   }
+}
+
+/* Dark Mode Styles */
+:global(.dark) .title {
+   color: #f1f5f9;
+}
+
+:global(.dark) .subtitle {
+   color: #94a3b8;
+}
+
+:global(.dark) .card {
+   background: #1e293b;
+   border-color: #334155;
+}
+
+:global(.dark) .selectInput {
+   background-color: #111827;
+   border-color: #334155;
+   color: #f1f5f9;
+}
+
+:global(.dark) .label {
+   color: #cbd5e1;
+}
