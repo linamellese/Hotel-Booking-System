@@ -1,0 +1,123 @@
+.input__container {
+   margin-bottom: 1rem;
+}
+
+.input__label {
+   display: block;
+   margin-bottom: 0.5rem;
+   font-weight: 500;
+   color: #374151;
+   font-size: 14px;
+}
+
+.input__required {
+   color: #ef4444;
+   margin-left: 4px;
+}
+
+.input__wrapper {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.input {
+   width: 100%;
+   padding: 10px 12px;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #111827;
+   background-color: white;
+   border: 1px solid #d1d5db;
+   border-radius: 6px;
+   transition: all 0.2s ease-in-out;
+   font-family: inherit;
+}
+
+.input:focus {
+   outline: none;
+   border-color: #3b82f6;
+   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.input--error {
+   border-color: #ef4444;
+}
+
+.input--error:focus {
+   border-color: #ef4444;
+   box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.input--disabled {
+   background-color: #f3f4f6;
+   cursor: not-allowed;
+   opacity: 0.7;
+}
+
+.input--readonly {
+   background-color: #f9fafb;
+}
+
+.input--with-left-icon {
+   padding-left: 40px;
+}
+
+.input--with-right-icon {
+   padding-right: 40px;
+}
+
+.input__leftIcon,
+.input__rightIcon {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #6b7280;
+}
+
+.input__leftIcon {
+   left: 12px;
+}
+
+.input__rightIcon {
+   right: 12px;
+}
+
+.input__error {
+   display: block;
+   margin-top: 4px;
+   color: #ef4444;
+   font-size: 14px;
+   line-height: 1.4;
+}
+
+/* Dark mode */
+:global(.dark) .input__label {
+   color: #e5e7eb;
+}
+
+:global(.dark) .input {
+   background-color: #1f2937;
+   border-color: #4b5563;
+   color: #f9fafb;
+}
+
+:global(.dark) .input:focus {
+   border-color: #3b82f6;
+   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+:global(.dark) .input--disabled {
+   background-color: #111827;
+   color: #6b7280;
+}
+
+:global(.dark) .input--readonly {
+   background-color: #111827;
+}
+
+:global(.dark) .input__leftIcon,
+:global(.dark) .input__rightIcon {
+   color: #9ca3af;
+}
