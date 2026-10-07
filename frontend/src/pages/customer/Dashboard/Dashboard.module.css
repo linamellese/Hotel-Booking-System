@@ -1,0 +1,307 @@
+.dashboard {
+   max-width: 1400px;
+   padding: 20px 0;
+}
+
+.dashboard__welcome {
+   margin-bottom: 40px;
+}
+
+.dashboard__title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   margin-bottom: 12px;
+   line-height: 1.2;
+}
+
+.dashboard__userName {
+   color: var(--primary-600);
+}
+
+.dashboard__subtitle {
+   font-size: 1.125rem;
+   color: var(--gray-600);
+   max-width: 600px;
+   /* margin: 0 auto; */
+}
+
+.dashboard__quickActions {
+   margin-bottom: 40px;
+}
+
+.dashboard__quickActionsGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+}
+
+.dashboard__quickActionCard {
+   display: block;
+   background: var(--gray-50);
+   border: 1px solid var(--gray-200);
+   border-radius: var(--radius-lg);
+   padding: 24px;
+   text-align: center;
+   transition: all 0.2s ease-in-out;
+   text-decoration: none;
+   color: inherit;
+}
+
+.dashboard__quickActionCard:hover {
+   transform: translateY(-4px);
+   box-shadow: var(--shadow-lg);
+   border-color: var(--primary-500);
+}
+
+.dashboard__quickActionIcon {
+   font-size: 2.5rem;
+   margin-bottom: 16px;
+   display: inline-block;
+}
+
+.dashboard__quickActionTitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 8px;
+}
+
+.dashboard__quickActionDesc {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+   line-height: 1.5;
+}
+
+.dashboard__recentBookings {
+   margin-bottom: 40px;
+}
+
+.dashboard__sectionHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.dashboard__sectionTitle {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 24px;
+}
+
+.dashboard__viewAllLink {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--primary-600);
+   text-decoration: none;
+   transition: color 0.2s;
+}
+
+.dashboard__viewAllLink:hover {
+   color: var(--primary-700);
+}
+
+.dashboard__loading {
+   display: flex;
+   justify-content: center;
+   padding: 40px 0;
+}
+
+.dashboard__bookingsList {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.dashboard__bookingCard {
+   padding: 20px;
+}
+
+.dashboard__bookingHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-bottom: 16px;
+}
+
+.dashboard__bookingTitle {
+   font-size: 1.125rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 4px;
+}
+
+.dashboard__bookingHotel {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+}
+
+.dashboard__bookingStatus {
+   font-size: 0.75rem;
+   font-weight: 600;
+   padding: 4px 12px;
+   border-radius: var(--radius-full);
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+
+.dashboard__bookingStatus--confirmed {
+   background-color: rgba(16, 185, 129, 0.1);
+   color: #10b981;
+}
+
+.dashboard__bookingStatus--pending {
+   background-color: rgba(245, 158, 11, 0.1);
+   color: #f59e0b;
+}
+
+.dashboard__bookingStatus--cancelled {
+   background-color: rgba(239, 68, 68, 0.1);
+   color: #ef4444;
+}
+
+.dashboard__bookingStatus--completed {
+   background-color: rgba(107, 114, 128, 0.1);
+   color: var(--gray-600);
+}
+
+.dashboard__bookingDetails {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 12px;
+   margin-bottom: 20px;
+   padding: 16px;
+   background-color: var(--gray-100);
+   border-radius: var(--radius-md);
+}
+
+.dashboard__bookingDetail {
+   display: flex;
+   flex-direction: column;
+}
+
+.dashboard__bookingLabel {
+   font-size: 0.75rem;
+   font-weight: 500;
+   color: var(--gray-600);
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   margin-bottom: 4px;
+}
+
+.dashboard__bookingValue {
+   font-size: 0.875rem;
+   font-weight: 600;
+   color: var(--gray-900);
+}
+
+.dashboard__bookingPrice {
+   color: var(--primary-600);
+   font-size: 1rem;
+}
+
+.dashboard__bookingActions {
+   display: flex;
+   gap: 12px;
+}
+
+.dashboard__bookingAction {
+   padding: 8px 16px;
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--primary-600);
+   background-color: transparent;
+   border: 1px solid var(--primary-600);
+   border-radius: var(--radius-md);
+   text-decoration: none;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.dashboard__bookingAction:hover {
+   background-color: var(--primary-600);
+   color: white;
+}
+
+.dashboard__bookingAction--secondary {
+   color: var(--gray-600);
+   border-color: var(--gray-300);
+}
+
+.dashboard__bookingAction--secondary:hover {
+   background-color: var(--gray-600);
+   color: white;
+   border-color: var(--gray-600);
+}
+
+.dashboard__emptyState {
+   text-align: center;
+   padding: 60px 20px;
+   background-color: var(--gray-50);
+   border-radius: var(--radius-lg);
+   border: 2px dashed var(--gray-300);
+}
+
+.dashboard__emptyIcon {
+   font-size: 3rem;
+   margin-bottom: 20px;
+   opacity: 0.5;
+}
+
+.dashboard__emptyTitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 8px;
+}
+
+.dashboard__emptyDesc {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+   margin-bottom: 20px;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.dashboard__emptyAction {
+   display: inline-block;
+   padding: 12px 24px;
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: white;
+   background-color: var(--primary-600);
+   border-radius: var(--radius-md);
+   text-decoration: none;
+   transition: background-color 0.2s;
+}
+
+.dashboard__emptyAction:hover {
+   background-color: var(--primary-700);
+}
+
+@media (max-width: 768px) {
+   .dashboard__title {
+      font-size: 2rem;
+   }
+
+   .dashboard__bookingDetails {
+      grid-template-columns: 1fr;
+   }
+
+   .dashboard__bookingActions {
+      flex-direction: column;
+   }
+}
+
+:global(.dark) .dashboard__bookingStatus--pending {
+   background: rgba(217, 119, 6, 0.2);
+   color: #fbbf24;
+}
+
+:global(.dark) .dashboard__bookingStatus--paid {
+   background: rgba(22, 163, 74, 0.2);
+   color: #4ade80;
+}
