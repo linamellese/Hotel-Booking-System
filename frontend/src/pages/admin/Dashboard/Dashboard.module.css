@@ -1,0 +1,545 @@
+.dashboard {
+   max-width: 1400px;
+   padding: 20px 0;
+}
+
+.dashboard__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-bottom: 32px;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.dashboard__title {
+   font-size: 2rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   margin-bottom: 8px;
+}
+
+.dashboard__subtitle {
+   font-size: 1rem;
+   color: var(--gray-600);
+   max-width: 600px;
+}
+
+.dashboard__headerActions {
+   display: flex;
+   gap: 12px;
+}
+
+.dashboard__periodSelector {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   margin-bottom: 24px;
+   padding: 16px;
+   background-color: var(--gray-50);
+   border-radius: var(--radius-lg);
+}
+
+.dashboard__periodLabel {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-700);
+   white-space: nowrap;
+}
+
+.dashboard__periodButtons {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.dashboard__periodButton {
+   padding: 8px 16px;
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-600);
+   background-color: var(--gray-50);
+   border: 1px solid var(--gray-300);
+   border-radius: var(--radius-md);
+   cursor: pointer;
+   transition: all 0.2s;
+   white-space: nowrap;
+}
+
+.dashboard__periodButton:hover {
+   background-color: var(--gray-50);
+   border-color: var(--gray-400);
+}
+
+.dashboard__periodButton--active {
+   color: var(--primary-600);
+   background-color: var(--primary-50);
+   border-color: var(--primary-200);
+   font-weight: 600;
+}
+
+.dashboard__statsGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 20px;
+   margin-bottom: 32px;
+}
+
+.dashboard__statCard {
+   padding: 24px;
+   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard__statCard:hover {
+   transform: translateY(-2px);
+   box-shadow: var(--shadow-lg);
+}
+
+.dashboard__statHeader {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   margin-bottom: 20px;
+}
+
+.dashboard__statIcon {
+   width: 60px;
+   height: 60px;
+   border-radius: var(--radius-full);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 2rem;
+   flex-shrink: 0;
+}
+
+.dashboard__statIcon--blue {
+   background-color: rgba(59, 130, 246, 0.1);
+   color: var(--primary-600);
+}
+
+.dashboard__statIcon--green {
+   background-color: rgba(16, 185, 129, 0.1);
+   color: #10b981;
+}
+
+.dashboard__statIcon--purple {
+   background-color: rgba(139, 92, 246, 0.1);
+   color: #8b5cf6;
+}
+
+.dashboard__statIcon--amber {
+   background-color: rgba(245, 158, 11, 0.1);
+   color: #f59e0b;
+}
+
+.dashboard__statIcon--emerald {
+   background-color: rgba(5, 150, 105, 0.1);
+   color: #059669;
+}
+
+.dashboard__statIcon--orange {
+   background-color: rgba(249, 115, 22, 0.1);
+   color: #f97316;
+}
+
+.dashboard__statInfo {
+   flex: 1;
+}
+
+.dashboard__statValue {
+   font-size: 1.875rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   line-height: 1;
+   margin-bottom: 4px;
+}
+
+.dashboard__statTitle {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-600);
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+
+.dashboard__statFooter {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 16px;
+   border-top: 1px solid var(--gray-200);
+}
+
+.dashboard__statChange {
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+}
+
+.dashboard__changeIndicator {
+   font-size: 0.75rem;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.dashboard__changeIndicator--positive {
+   color: #10b981;
+}
+
+.dashboard__changeIndicator--negative {
+   color: #ef4444;
+}
+
+.dashboard__changeLabel {
+   font-size: 0.75rem;
+   color: var(--gray-500);
+}
+
+.dashboard__statLink {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--primary-600);
+   text-decoration: none;
+   transition: color 0.2s;
+}
+
+.dashboard__statLink:hover {
+   color: var(--primary-700);
+   text-decoration: underline;
+}
+
+.dashboard__contentGrid {
+   gap: 24px;
+}
+
+.dashboard__column {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.dashboard__sectionCard {
+   padding: 24px;
+   background-color: white;
+}
+
+:global(.dark) .dashboard__sectionCard {
+   background-color: var(--gray-100);
+   border: 1px solid var(--gray-200);
+}
+
+.dashboard__sectionHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.dashboard__sectionTitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.dashboard__badge {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 24px;
+   height: 24px;
+   padding: 0 8px;
+   font-size: 0.75rem;
+   font-weight: 600;
+   color: white;
+   background-color: #ef4444;
+   border-radius: var(--radius-full);
+}
+
+.dashboard__viewAllLink {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--primary-600);
+   text-decoration: none;
+   transition: color 0.2s;
+}
+
+.dashboard__viewAllLink:hover {
+   color: var(--primary-700);
+   text-decoration: underline;
+}
+
+.dashboard__table {
+   width: 100%;
+}
+
+.dashboard__businessName {
+   font-weight: 500;
+   color: var(--gray-900);
+   margin-bottom: 2px;
+}
+
+.dashboard__businessOwner {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+}
+
+.dashboard__approvalActions {
+   display: flex;
+   gap: 8px;
+}
+
+.dashboard__activityAction {
+   font-weight: 500;
+   color: var(--gray-900);
+   margin-bottom: 2px;
+}
+
+.dashboard__activityUser {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+}
+
+.dashboard__hotelName {
+   font-weight: 500;
+   color: var(--gray-900);
+   margin-bottom: 2px;
+}
+
+.dashboard__hotelLocation {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+}
+
+.dashboard__bookingCount {
+   font-weight: 600;
+   color: var(--primary-600);
+}
+
+.dashboard__hotelRating {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.dashboard__ratingValue {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+   margin-left: 4px;
+}
+
+.dashboard__moreItems {
+   padding: 12px;
+   text-align: center;
+   font-size: 0.875rem;
+   color: var(--gray-600);
+   background-color: var(--gray-50);
+   border-radius: var(--radius-md);
+   margin-top: 12px;
+}
+
+.dashboard__emptyState {
+   padding: 40px 20px;
+   text-align: center;
+}
+
+.dashboard__emptyIcon {
+   font-size: 2.5rem;
+   margin-bottom: 12px;
+   opacity: 0.5;
+}
+
+.dashboard__emptyText {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+}
+
+.dashboard__healthMetrics {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.dashboard__healthMetric {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.dashboard__metricHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.dashboard__metricLabel {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-900);
+}
+
+.dashboard__metricStatus {
+   font-size: 0.75rem;
+   font-weight: 600;
+   padding: 2px 8px;
+   border-radius: var(--radius-full);
+}
+
+.dashboard__metricStatus--good {
+   background-color: rgba(16, 185, 129, 0.1);
+   color: #10b981;
+}
+
+.dashboard__metricStatus--excellent {
+   background-color: rgba(59, 130, 246, 0.1);
+   color: var(--primary-600);
+}
+
+.dashboard__metricStatus--warning {
+   background-color: rgba(245, 158, 11, 0.1);
+   color: #f59e0b;
+}
+
+.dashboard__metricBar {
+   height: 8px;
+   background-color: var(--gray-200);
+   border-radius: var(--radius-full);
+   overflow: hidden;
+}
+
+.dashboard__metricFill {
+   height: 100%;
+   border-radius: var(--radius-full);
+}
+
+.dashboard__metricFill--good {
+   background-color: #10b981;
+}
+
+.dashboard__metricFill--excellent {
+   background-color: var(--primary-600);
+}
+
+.dashboard__metricFill--warning {
+   background-color: #f59e0b;
+}
+
+.dashboard__metricValue {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+}
+
+.dashboard__quickStats {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+}
+
+.dashboard__quickStat {
+   text-align: center;
+   padding: 16px;
+   background-color: var(--gray-50);
+   border-radius: var(--radius-lg);
+}
+
+.dashboard__quickStatValue {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   margin-bottom: 4px;
+}
+
+.dashboard__quickStatLabel {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+
+.dashboard__quickActionsModal {
+   padding: 8px 0;
+}
+
+.dashboard__quickActionsGrid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 16px;
+}
+
+.dashboard__quickAction {
+   padding: 20px;
+   background-color: var(--gray-50);
+   border: 1px solid var(--gray-200);
+   border-radius: var(--radius-lg);
+   cursor: pointer;
+   transition: all 0.2s;
+   text-align: center;
+}
+
+.dashboard__quickAction:hover {
+   background-color: var(--gray-100);
+   border-color: var(--gray-300);
+   transform: translateY(-2px);
+}
+
+.dashboard__quickActionIcon {
+   font-size: 2rem;
+   margin-bottom: 12px;
+   opacity: 0.8;
+}
+
+.dashboard__quickActionText {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-900);
+}
+
+.approvalModal {
+   padding: 1.5rem;
+}
+
+.approvalModal__description {
+   margin-bottom: 1.5rem;
+   font-size: 0.95rem;
+   line-height: 1.5;
+}
+
+.approvalModal__hotelName {
+   font-weight: 600;
+   color: var(--gray-900);
+}
+
+.approvalModal__actions {
+   display: flex;
+   justify-content: flex-end;
+   gap: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+   .dashboard__contentGrid {
+      grid-template-columns: 2fr 1fr;
+   }
+}
+
+@media (max-width: 768px) {
+   .dashboard__statsGrid {
+      grid-template-columns: 1fr;
+   }
+
+   .dashboard__quickStats {
+      grid-template-columns: 1fr;
+   }
+
+   .dashboard__quickActionsGrid {
+      grid-template-columns: 1fr;
+   }
+
+   .dashboard__approvalActions {
+      flex-direction: column;
+   }
+}
