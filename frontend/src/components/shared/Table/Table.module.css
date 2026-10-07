@@ -1,0 +1,100 @@
+.tableWrapper {
+   overflow-x: auto;
+   border-radius: 8px;
+   border: 1px solid #e2e8f0;
+   background: white;
+}
+
+.table {
+   width: 100%;
+   border-collapse: collapse;
+   min-width: 800px;
+}
+
+.tableHeader {
+   background-color: #f8fafc;
+   padding: 0.75rem 1rem;
+   text-align: left;
+   font-size: 0.75rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   color: #64748b;
+   border-bottom: 1px solid #e2e8f0;
+   white-space: nowrap;
+}
+
+.tableRow {
+   border-bottom: 1px solid #e2e8f0;
+   transition: background-color 0.2s ease;
+}
+
+.tableRow:last-child {
+   border-bottom: none;
+}
+
+.tableRow:hover {
+   background-color: #f8fafc;
+}
+
+.clickableRow {
+   cursor: pointer;
+}
+
+.clickableRow:hover {
+   background-color: #f1f5f9;
+}
+
+.tableCell {
+   padding: 1rem;
+   font-size: 0.875rem;
+   color: #334155;
+   vertical-align: top;
+}
+
+.tableEmpty {
+   padding: 3rem 1rem;
+   text-align: center;
+   color: #64748b;
+   font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+   .tableHeader,
+   .tableCell {
+      padding: 0.75rem 0.5rem;
+   }
+}
+
+/* Dark mode */
+:global(.dark) .tableWrapper {
+   background: #1e293b;
+   border-color: #334155;
+}
+
+:global(.dark) .tableHeader {
+   background-color: #0f172a;
+   color: #94a3b8;
+   border-color: #334155;
+}
+
+:global(.dark) .tableRow {
+   border-color: #334155;
+}
+
+:global(.dark) .tableRow:hover {
+   background-color: #1e293b;
+}
+
+:global(.dark) .clickableRow:hover {
+   background-color: #1e293b;
+}
+
+:global(.dark) .tableCell {
+   color: #cbd5e1;
+}
+
+:global(.dark) .tableEmpty {
+   color: #94a3b8;
+}
