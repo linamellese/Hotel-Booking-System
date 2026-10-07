@@ -1,0 +1,763 @@
+.dashboard {
+   padding: 20px 0;
+}
+
+.dashboard__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-bottom: 32px;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.dashboard__welcome {
+   margin-bottom: 40px;
+}
+
+.dashboard__title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   margin-bottom: 12px;
+   line-height: 1.2;
+}
+
+.dashboard__userName {
+   color: var(--primary-600);
+}
+
+.dashboard__subtitle {
+   font-size: 1.125rem;
+   color: var(--gray-600);
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+.dashboard__headerActions {
+   display: flex;
+   gap: 12px;
+}
+
+.dashboard__alert {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 16px 20px;
+   background-color: rgba(245, 158, 11, 0.1);
+   border: 1px solid rgba(245, 158, 11, 0.2);
+   border-radius: var(--radius-lg);
+   margin-bottom: 32px;
+}
+
+.dashboard__alertContent {
+   display: flex;
+   align-items: flex-start;
+   gap: 12px;
+   flex: 1;
+}
+
+.dashboard__alertIcon {
+   font-size: 1.5rem;
+   margin-top: 2px;
+}
+
+.dashboard__alertTitle {
+   font-size: 1rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 4px;
+}
+
+.dashboard__alertText {
+   font-size: 0.875rem;
+   color: var(--gray-700);
+}
+
+.dashboard__metricsGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+   gap: 20px;
+   margin-bottom: 32px;
+}
+
+.dashboard__metricCard {
+   padding: 24px;
+   border: 1px solid var(--gray-200);
+   transition: all 0.2s;
+   cursor: default;
+}
+
+.dashboard__metricCard--highlight {
+   border-color: rgba(239, 68, 68, 0.3);
+   background-color: rgba(239, 68, 68, 0.05);
+}
+
+.dashboard__metricCard[clickable="true"] {
+   cursor: pointer;
+}
+
+.dashboard__metricCard[clickable="true"]:hover {
+   transform: translateY(-2px);
+   box-shadow: var(--shadow-md);
+   border-color: var(--primary-300);
+}
+
+.dashboard__metricHeader {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   margin-bottom: 16px;
+}
+
+.dashboard__metricIcon {
+   width: 56px;
+   height: 56px;
+   border-radius: var(--radius-full);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.5rem;
+   flex-shrink: 0;
+}
+
+.dashboard__metricIcon--blue {
+   background-color: rgba(59, 130, 246, 0.1);
+   color: var(--primary-600);
+}
+
+.dashboard__metricIcon--green {
+   background-color: rgba(16, 185, 129, 0.1);
+   color: #10b981;
+}
+
+.dashboard__metricIcon--purple {
+   background-color: rgba(139, 92, 246, 0.1);
+   color: #8b5cf6;
+}
+
+.dashboard__metricIcon--orange {
+   background-color: rgba(249, 115, 22, 0.1);
+   color: #f97316;
+}
+
+.dashboard__metricIcon--amber {
+   background-color: rgba(245, 158, 11, 0.1);
+   color: #f59e0b;
+}
+
+.dashboard__metricIcon--red {
+   background-color: rgba(239, 68, 68, 0.1);
+   color: #ef4444;
+}
+
+.dashboard__metricInfo {
+   flex: 1;
+}
+
+.dashboard__metricValue {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   line-height: 1;
+   margin-bottom: 4px;
+   display: flex;
+   align-items: baseline;
+   gap: 4px;
+}
+
+.dashboard__metricTotal {
+   font-size: 0.875rem;
+   color: var(--gray-500);
+   font-weight: 400;
+}
+
+.dashboard__metricTitle {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-600);
+}
+
+.dashboard__metricFooter {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 12px;
+   border-top: 1px solid var(--gray-200);
+}
+
+.dashboard__metricChange {
+   font-size: 0.75rem;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   gap: 2px;
+}
+
+.dashboard__metricChange--positive {
+   color: #10b981;
+}
+
+.dashboard__metricChange--negative {
+   color: #ef4444;
+}
+
+.dashboard__metricPeriod {
+   font-size: 0.75rem;
+   color: var(--gray-500);
+}
+
+.dashboard__content {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 32px;
+}
+
+.dashboard__leftColumn,
+.dashboard__rightColumn {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+
+.dashboard__section {
+   padding: 24px;
+   border: 1px solid var(--gray-200);
+}
+
+.dashboard__sectionHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.dashboard__sectionTitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--gray-900);
+}
+
+.dashboard__checkinCount {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--primary-600);
+}
+
+.dashboard__table {
+   width: 100%;
+}
+
+.dashboard__bookingId {
+   font-family: "Courier New", monospace;
+   font-weight: 600;
+   color: var(--gray-700);
+}
+
+.dashboard__customerName {
+   font-weight: 500;
+   color: var(--gray-900);
+   margin-bottom: 2px;
+}
+
+.dashboard__customerEmail {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+}
+
+.status {
+   padding: 4px 12px;
+   font-size: 0.75rem;
+   font-weight: 600;
+   border-radius: var(--radius-full);
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+
+.status--paid {
+   background-color: rgba(16, 185, 129, 0.1);
+   color: #10b981;
+}
+
+.status--pending {
+   background-color: rgba(245, 158, 11, 0.1);
+   color: #f59e0b;
+}
+
+.dashboard__emptyState {
+   padding: 40px 20px;
+   text-align: center;
+}
+
+.dashboard__emptyIcon {
+   font-size: 2.5rem;
+   margin-bottom: 12px;
+   opacity: 0.5;
+}
+
+.dashboard__emptyText {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+   margin-bottom: 16px;
+}
+
+.dashboard__performanceGrid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+}
+
+.dashboard__performanceMetric {
+   padding: 16px;
+   background-color: var(--gray-50);
+   border-radius: var(--radius-lg);
+   border: 1px solid var(--gray-200);
+}
+
+.dashboard__performanceLabel {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-700);
+   margin-bottom: 8px;
+}
+
+.dashboard__performanceValue {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   margin-bottom: 4px;
+}
+
+.dashboard__performanceChange {
+   font-size: 0.75rem;
+   font-weight: 600;
+}
+
+.dashboard__performanceChange--positive {
+   color: #10b981;
+}
+
+.dashboard__performanceChange--negative {
+   color: #ef4444;
+}
+
+.dashboard__quickActions {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.dashboard__quickAction {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   padding: 16px;
+   background-color: var(--gray-50);
+   border: 1px solid var(--gray-200);
+   border-radius: var(--radius-lg);
+   cursor: pointer;
+   transition: all 0.2s;
+   text-align: left;
+   width: 100%;
+}
+
+.dashboard__quickAction:hover {
+   background-color: var(--gray-100);
+   border-color: var(--gray-300);
+   transform: translateY(-2px);
+   box-shadow: var(--shadow-sm);
+}
+
+.dashboard__quickActionIcon {
+   width: 48px;
+   height: 48px;
+   border-radius: var(--radius-full);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.25rem;
+   flex-shrink: 0;
+}
+
+.dashboard__quickActionIcon--blue {
+   background-color: rgba(59, 130, 246, 0.1);
+   color: var(--primary-600);
+}
+
+.dashboard__quickActionIcon--green {
+   background-color: rgba(16, 185, 129, 0.1);
+   color: #10b981;
+}
+
+.dashboard__quickActionIcon--purple {
+   background-color: rgba(139, 92, 246, 0.1);
+   color: #8b5cf6;
+}
+
+.dashboard__quickActionIcon--amber {
+   background-color: rgba(245, 158, 11, 0.1);
+   color: #f59e0b;
+}
+
+.dashboard__quickActionContent {
+   flex: 1;
+}
+
+.dashboard__quickActionTitle {
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 4px;
+}
+
+.dashboard__quickActionDescription {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+}
+
+.dashboard__checkinList {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.dashboard__checkinItem {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 12px;
+   background-color: var(--gray-50);
+   border-radius: var(--radius-md);
+   border: 1px solid var(--gray-200);
+}
+
+.dashboard__checkinInfo {
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+}
+
+.dashboard__checkinName {
+   font-weight: 500;
+   color: var(--gray-900);
+}
+
+.dashboard__checkinRoom {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+}
+
+.dashboard__checkinTime {
+   font-weight: 600;
+   color: var(--primary-600);
+   font-size: 0.875rem;
+}
+
+.dashboard__reviewsList {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.dashboard__reviewItem {
+   padding: 16px;
+   background-color: var(--gray-50);
+   border-radius: var(--radius-lg);
+   border: 1px solid var(--gray-200);
+}
+
+.dashboard__reviewHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 8px;
+}
+
+.dashboard__reviewRating {
+   color: #f59e0b;
+   font-size: 0.875rem;
+}
+
+.dashboard__reviewDate {
+   font-size: 0.75rem;
+   color: var(--gray-500);
+}
+
+.dashboard__reviewContent {
+   font-size: 0.875rem;
+   color: var(--gray-700);
+   line-height: 1.5;
+   margin-bottom: 8px;
+}
+
+.dashboard__reviewer {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+   font-style: italic;
+}
+
+.dashboard__businessModal {
+   padding: 8px 0;
+}
+
+.dashboard__modalText {
+   font-size: 0.875rem;
+   color: var(--gray-700);
+   line-height: 1.5;
+   margin-bottom: 24px;
+}
+
+.dashboard__setupSteps {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-bottom: 32px;
+}
+
+.dashboard__setupStep {
+   display: flex;
+   align-items: flex-start;
+   gap: 16px;
+}
+
+.dashboard__stepNumber {
+   width: 32px;
+   height: 32px;
+   border-radius: var(--radius-full);
+   background-color: var(--primary-100);
+   color: var(--primary-600);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 600;
+   font-size: 0.875rem;
+   flex-shrink: 0;
+}
+
+.dashboard__stepContent {
+   flex: 1;
+}
+
+.dashboard__stepTitle {
+   font-size: 1rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 4px;
+}
+
+.dashboard__stepDescription {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+   line-height: 1.5;
+}
+
+.dashboard__modalActions {
+   display: flex;
+   justify-content: flex-end;
+   gap: 12px;
+}
+
+.approval {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.approval__card {
+   background: #ffffff;
+   max-width: 480px;
+   width: 100%;
+   padding: 2.5rem;
+   border-radius: 16px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+   text-align: center;
+}
+
+.approval__iconWrapper {
+   width: 72px;
+   height: 72px;
+   margin: 0 auto 1.5rem;
+   border-radius: 50%;
+   background: #eef2ff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.approval__icon {
+   font-size: 2rem;
+}
+
+.approval__title {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: #1f2937;
+   margin-bottom: 0.75rem;
+}
+
+.approval__description {
+   font-size: 0.95rem;
+   color: #4b5563;
+   line-height: 1.6;
+   margin-bottom: 1.5rem;
+}
+
+.approval__status {
+   margin-bottom: 1.5rem;
+}
+
+.approval__badge {
+   display: inline-block;
+   padding: 0.4rem 1rem;
+   font-size: 0.85rem;
+   font-weight: 500;
+   border-radius: 999px;
+   background: #fff7ed;
+   color: #c2410c;
+}
+
+.approval__steps {
+   list-style: none;
+   padding: 0;
+   margin: 0 0 1.5rem;
+   text-align: left;
+}
+
+.approval__step {
+   font-size: 0.9rem;
+   color: #1f2937;
+   padding: 0.5rem 0;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.approval__step--disabled {
+   color: #9ca3af;
+}
+
+.approval__hint {
+   font-size: 0.85rem;
+   color: #6b7280;
+}
+
+.approval__iconWrapper--rejected {
+   width: 72px;
+   height: 72px;
+   margin: 0 auto 1.5rem;
+   border-radius: 50%;
+   background: #fee2e2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.approval__badge--rejected {
+   display: inline-block;
+   padding: 0.4rem 1rem;
+   font-size: 0.85rem;
+   font-weight: 500;
+   border-radius: 999px;
+   background: #fee2e2;
+   color: #b91c1c;
+}
+
+@media (min-width: 1024px) {
+   .dashboard__content {
+      grid-template-columns: 2fr 1fr;
+   }
+}
+
+@media (max-width: 768px) {
+   .dashboard__header {
+      flex-direction: column;
+   }
+
+   .dashboard__metricsGrid {
+      grid-template-columns: 1fr;
+   }
+
+   .dashboard__performanceGrid {
+      grid-template-columns: 1fr;
+   }
+
+   .dashboard__alert {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+   }
+
+   .dashboard__modalActions {
+      flex-direction: column;
+   }
+}
+
+/* Dark Mode support */
+:global(.dark) .dashboard__section {
+   background-color: var(--gray-100);
+   border-color: var(--gray-200);
+}
+
+:global(.dark) .dashboard__metricCard {
+   background-color: var(--gray-100);
+   border-color: var(--gray-200);
+}
+
+:global(.dark) .dashboard__metricCard--highlight {
+   background-color: rgba(239, 68, 68, 0.1);
+   border-color: rgba(239, 68, 68, 0.4);
+}
+
+:global(.dark) .dashboard__performanceMetric {
+   background-color: var(--gray-100);
+   border-color: var(--gray-200);
+}
+
+:global(.dark) .dashboard__quickAction {
+   background-color: var(--gray-100);
+   border-color: var(--gray-200);
+}
+
+:global(.dark) .dashboard__quickAction:hover {
+   background-color: var(--gray-200);
+}
+
+:global(.dark) .dashboard__checkinItem {
+   background-color: var(--gray-100);
+   border-color: var(--gray-200);
+}
+
+:global(.dark) .dashboard__reviewItem {
+   background-color: var(--gray-100);
+   border-color: var(--gray-200);
+}
+
+:global(.dark) .approval__card {
+   background-color: var(--gray-100);
+   border: 1px solid var(--gray-200);
+}
+
+:global(.dark) .approval__title {
+   color: var(--gray-900);
+}
+
+:global(.dark) .approval__description {
+   color: var(--gray-600);
+}
+
+:global(.dark) .approval__step {
+   color: var(--gray-600);
+}
+
+:global(.dark) .approval__iconWrapper {
+   background-color: var(--gray-200);
+}
+
+:global(.dark) .status--pending {
+   background: rgba(217, 119, 6, 0.2);
+   color: #fbbf24;
+}
+
+:global(.dark) .status--paid {
+   background: rgba(22, 163, 74, 0.2);
+   color: #4ade80;
+}
