@@ -1,0 +1,79 @@
+.container {
+   min-width: 100vw;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   background-color: #f9fafb;
+}
+
+.card {
+   background: white;
+   padding: 3rem 2rem;
+   border-radius: 16px;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+   width: 100%;
+   max-width: 480px;
+   text-align: center;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+.title {
+   font-size: 1.875rem;
+   font-weight: 700;
+   color: #111827;
+}
+
+.text {
+   color: #6b7280;
+   line-height: 1.5;
+   margin-bottom: 1rem;
+}
+
+.spinner {
+   color: #2563eb;
+   animation: spin 1s linear infinite;
+}
+
+.successIcon {
+   color: #10b981;
+}
+
+.errorIcon {
+   color: #ef4444;
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+/* Dark Mode support */
+:global(.dark) .container {
+   background-color: #0f172a;
+}
+
+:global(.dark) .card {
+   background: #1e293b;
+   border: 1px solid #334155;
+}
+
+:global(.dark) .title {
+   color: #f1f5f9;
+}
+
+:global(.dark) .text {
+   color: #94a3b8;
+}
