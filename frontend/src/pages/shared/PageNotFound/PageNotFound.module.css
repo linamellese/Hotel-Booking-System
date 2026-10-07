@@ -1,0 +1,136 @@
+.notFound {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #f9fafb;
+   padding: 20px;
+}
+
+.notFound__container {
+   max-width: 500px;
+   width: 100%;
+   text-align: center;
+}
+
+.notFound__content {
+   border-radius: 12px;
+   padding: 48px 32px;
+}
+
+.notFound__errorCode {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 24px;
+}
+
+.notFound__number {
+   font-size: 6rem;
+   font-weight: 800;
+   color: #3b82f6;
+   line-height: 1;
+}
+
+.notFound__icon {
+   font-size: 4rem;
+   opacity: 0.7;
+}
+
+.notFound__title {
+   font-size: 2rem;
+   font-weight: 700;
+   color: #1f2937;
+   margin-bottom: 16px;
+}
+
+.notFound__message {
+   font-size: 1.125rem;
+   color: #6b7280;
+   margin-bottom: 32px;
+   line-height: 1.6;
+}
+
+.notFound__actions {
+   margin-bottom: 40px;
+}
+
+.notFound__actions button {
+   min-width: 200px;
+   padding: 12px 24px;
+   font-size: 1.125rem;
+}
+
+.notFound__help {
+   padding-top: 32px;
+   border-top: 1px solid #e5e7eb;
+}
+
+.notFound__help p {
+   color: #6b7280;
+   margin-bottom: 16px;
+}
+
+.notFound__links {
+   display: flex;
+   justify-content: center;
+   gap: 24px;
+   flex-wrap: wrap;
+}
+
+.notFound__links a {
+   color: #3b82f6;
+   text-decoration: none;
+   font-weight: 500;
+   padding: 8px 16px;
+   border-radius: 6px;
+   transition: all 0.2s;
+}
+
+.notFound__links a:hover {
+   background-color: #eff6ff;
+   text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+   .notFound__content {
+      padding: 32px 24px;
+   }
+
+   .notFound__number {
+      font-size: 4.5rem;
+   }
+
+   .notFound__icon {
+      font-size: 3rem;
+   }
+
+   .notFound__title {
+      font-size: 1.75rem;
+   }
+
+   .notFound__message {
+      font-size: 1rem;
+   }
+
+   .notFound__links {
+      flex-direction: column;
+      gap: 12px;
+   }
+}
+
+@media (max-width: 480px) {
+   .notFound__errorCode {
+      gap: 8px;
+   }
+
+   .notFound__number {
+      font-size: 3.5rem;
+   }
+
+   .notFound__icon {
+      font-size: 2.5rem;
+   }
+}
