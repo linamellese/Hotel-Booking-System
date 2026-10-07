@@ -1,0 +1,229 @@
+.contact {
+   background: white;
+   padding-bottom: 5rem;
+}
+
+.container {
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 5rem 1rem;
+}
+
+.layout {
+   display: grid;
+   grid-template-columns: 1fr 1.5fr;
+   gap: 3rem;
+   margin-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+   .layout {
+      grid-template-columns: 1fr;
+   }
+}
+
+.header {
+   text-align: center;
+   margin-bottom: 4rem;
+}
+
+.title {
+   font-size: 2.5rem;
+   font-weight: 800;
+   color: #1f2937;
+   margin-bottom: 1rem;
+   letter-spacing: -0.025em;
+}
+
+.subtitle {
+   font-size: 1.125rem;
+   color: #6b7280;
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+.contactInfoCard {
+   background: #f8fafc;
+   padding: 3rem;
+   border-radius: 1.5rem;
+   height: fit-content;
+}
+
+.infoItem {
+   display: flex;
+   align-items: center;
+   gap: 1.25rem;
+   margin-bottom: 2.5rem;
+}
+
+.infoItem:last-child {
+   margin-bottom: 0;
+}
+
+.infoIcon {
+   color: #2563eb;
+   background: white;
+   width: 52px;
+   height: 52px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 1rem;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+   flex-shrink: 0;
+}
+
+.infoLabel {
+   font-weight: 600;
+   color: #1f2937;
+   margin-bottom: 0.25rem;
+   display: block;
+}
+
+.infoValue {
+   color: #4b5563;
+   line-height: 1.5;
+}
+
+.formCard {
+   background: white;
+   padding: 3rem;
+   border-radius: 1.5rem;
+   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05),
+      0 4px 6px -2px rgba(0, 0, 0, 0.02);
+   border: 1px solid #f1f5f9;
+}
+
+.formGrid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+   .formGrid {
+      grid-template-columns: 1fr;
+   }
+}
+
+.formGroup {
+   margin-bottom: 1.5rem;
+}
+
+.label {
+   display: block;
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: #374151;
+   margin-bottom: 0.5rem;
+}
+
+.input,
+.textarea {
+   width: 100%;
+   padding: 0.75rem 1rem;
+   border: 1px solid #d1d5db;
+   border-radius: 0.5rem;
+   background: #f9fafb;
+   transition: all 0.2s;
+   font-size: 0.95rem;
+}
+
+.input:focus,
+.textarea:focus {
+   outline: none;
+   border-color: #2563eb;
+   background: white;
+   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.textarea {
+   min-height: 150px;
+   resize: vertical;
+}
+
+.submitButton {
+   width: 100%;
+   background: #2563eb;
+   color: white;
+   font-weight: 600;
+   padding: 0.875rem;
+   border-radius: 0.5rem;
+   transition: background 0.2s;
+}
+
+.submitButton:hover {
+   background: #1d4ed8;
+}
+@media (max-width: 480px) {
+   .roomCard__header {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .searchHeader__title {
+      font-size: 1.75rem;
+   }
+
+   .roomCard__details {
+      flex-direction: column;
+      gap: 0.75rem;
+   }
+
+   .roomCard__amenities {
+      justify-content: center;
+   }
+}
+
+/* Dark Mode Styles */
+:global(.dark) .contact {
+   background: #0f172a;
+}
+
+:global(.dark) .title {
+   color: #f1f5f9;
+}
+
+:global(.dark) .subtitle {
+   color: #94a3b8;
+}
+
+:global(.dark) .contactInfoCard {
+   background: #1e293b;
+}
+
+:global(.dark) .infoIcon {
+   background: #334155;
+   color: #60a5fa;
+}
+
+:global(.dark) .infoLabel {
+   color: #f1f5f9;
+}
+
+:global(.dark) .infoValue {
+   color: #94a3b8;
+}
+
+:global(.dark) .formCard {
+   background: #1e293b;
+   border-color: #334155;
+}
+
+:global(.dark) .label {
+   color: #e5e7eb;
+}
+
+:global(.dark) .input,
+:global(.dark) .textarea {
+   background: #111827;
+   border-color: #334155;
+   color: #f9fafb;
+}
+
+:global(.dark) .input:focus,
+:global(.dark) .textarea:focus {
+   border-color: #2563eb;
+   background: #0f172a;
+}
