@@ -1,0 +1,139 @@
+.container {
+   width: 100%;
+}
+
+.searchContainer {
+   position: relative;
+   margin-bottom: 1rem;
+}
+
+.inputWrapper {
+   position: relative;
+}
+
+.searchIcon {
+   position: absolute;
+   left: 12px;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #9ca3af;
+}
+
+.searchInput {
+   width: 100%;
+   padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+   border: 1px solid #e5e7eb;
+   border-radius: 0.5rem;
+   font-size: 0.875rem;
+   outline: none;
+   transition: all 0.2s;
+}
+
+.searchInput:focus {
+   border-color: #3b82f6;
+   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.gpsButton {
+   position: absolute;
+   right: 12px;
+   top: 50%;
+   transform: translateY(-50%);
+   background: none;
+   border: none;
+   color: #6b7280;
+   cursor: pointer;
+   padding: 4px;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.2s;
+   z-index: 10;
+}
+
+.gpsButton:hover {
+   color: #3b82f6;
+   background-color: #eff6ff;
+}
+
+.spinner {
+   position: absolute;
+   right: 40px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.suggestionsList {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   right: 0;
+   margin-top: 4px;
+   background: white;
+   border: 1px solid #e5e7eb;
+   border-radius: 0.5rem;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+   max-height: 200px;
+   overflow-y: auto;
+   z-index: 1000;
+}
+
+.suggestionItem {
+   padding: 0.75rem;
+   cursor: pointer;
+   display: flex;
+   gap: 0.75rem;
+   align-items: flex-start;
+   color: #4b5563;
+   font-size: 0.875rem;
+   border-bottom: 1px solid #f3f4f6;
+}
+
+.suggestionItem:last-child {
+   border-bottom: none;
+}
+
+.suggestionItem:hover {
+   background-color: #f9fafb;
+}
+
+.mapWrapper {
+   height: 300px;
+   border-radius: 0.5rem;
+   overflow: hidden;
+   border: 1px solid #e5e7eb;
+}
+
+.map {
+   height: 100%;
+   width: 100%;
+   z-index: 1; /* Ensure lower than dropdowns */
+}
+
+.helperText {
+   margin-top: 0.5rem;
+   font-size: 0.75rem;
+   color: #6b7280;
+   text-align: center;
+}
+
+:global(.dark) .searchInput {
+   background-color: #1f2937;
+   border-color: #374151;
+   color: #f3f4f6;
+}
+
+:global(.dark) .suggestionsList {
+   background-color: #1f2937;
+   border-color: #374151;
+}
+
+:global(.dark) .suggestionItem {
+   border-color: #374151;
+   color: #e5e7eb;
+}
+
+:global(.dark) .suggestionItem:hover {
+   background-color: #374151;
+}
