@@ -1,0 +1,268 @@
+.users {
+   max-width: 1400px;
+   padding: 24px 0;
+}
+
+.users__user {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}
+
+.users__userImage {
+   width: 50px;
+   height: 50px;
+   border-radius: var(--radius-full);
+   overflow: hidden;
+}
+
+.users__userImage img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.users__userInfo {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.users__userPhone {
+   font-size: 0.875rem;
+   color: var(--gray-500);
+}
+
+.users__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 32px;
+   gap: 20px;
+}
+
+.users__title {
+   font-size: 2rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   margin-bottom: 8px;
+}
+
+.users__subtitle {
+   font-size: 1rem;
+   color: var(--gray-600);
+}
+
+.users__filters {
+   display: flex;
+   gap: 16px;
+   margin-bottom: 24px;
+   flex-wrap: wrap;
+   align-items: flex-end;
+}
+
+.users__searchWrapper {
+   flex: 1;
+   min-width: 300px;
+}
+
+.users__filterGroup {
+   display: flex;
+   gap: 12px;
+   align-items: center;
+}
+
+.users__select {
+   padding: 10px 16px;
+   border-radius: var(--radius-md);
+   border: 1px solid var(--gray-300);
+   background-color: white;
+   font-size: 0.875rem;
+   color: var(--gray-700);
+   min-width: 160px;
+   cursor: pointer;
+}
+
+.users__select:focus {
+   outline: none;
+   border-color: var(--primary-500);
+   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.users__tableCard {
+   padding: 0;
+   overflow: hidden;
+}
+
+.users__status {
+   display: inline-flex;
+   align-items: center;
+   padding: 4px 12px;
+   border-radius: var(--radius-full);
+   font-size: 0.75rem;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+
+.users__status--active {
+   background-color: rgba(16, 185, 129, 0.1);
+   color: #10b981;
+}
+
+.users__status--inactive {
+   background-color: rgba(239, 68, 68, 0.1);
+   color: #ef4444;
+}
+
+.users__role {
+   display: inline-flex;
+   align-items: center;
+   padding: 4px 8px;
+   border-radius: var(--radius-md);
+   font-size: 0.75rem;
+   font-weight: 500;
+   background-color: var(--gray-100);
+   color: var(--gray-700);
+}
+
+.users__userName {
+   font-weight: 600;
+   color: var(--gray-900);
+}
+
+.users__userEmail {
+   font-size: 0.875rem;
+   color: var(--gray-500);
+}
+
+.users__actions {
+   display: flex;
+   gap: 8px;
+}
+
+.users__pagination {
+   margin-top: 24px;
+   display: flex;
+   justify-content: center;
+}
+
+/* Modal Styling */
+.userModal {
+   padding: 1.5rem;
+}
+
+.userModal__title {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   margin-bottom: 0.5rem;
+}
+
+.userModal__formGrid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 16px;
+   margin-top: 1.5rem;
+}
+
+.userModal__formGroup {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+}
+
+.userModal__formGroup--full {
+   grid-column: span 2;
+}
+
+.userModal__formLabel {
+   font-size: 0.875rem;
+   font-weight: 600;
+   color: var(--gray-700);
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.userModal__message {
+   color: var(--gray-600);
+   margin-bottom: 2rem;
+   line-height: 1.5;
+}
+
+.userModal__userName {
+   font-weight: 600;
+   color: var(--gray-900);
+}
+
+.userModal__actions {
+   display: flex;
+   justify-content: flex-end;
+   gap: 12px;
+   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+   .users__filters {
+      flex-direction: column;
+      align-items: stretch;
+   }
+
+   .users__searchWrapper {
+      min-width: 100%;
+   }
+
+   .users__filterGroup {
+      flex-direction: column;
+      align-items: stretch;
+   }
+
+   .users__select {
+      width: 100%;
+   }
+
+   .userModal__actions {
+      flex-direction: column;
+   }
+
+   .userModal__actions button {
+      width: 100%;
+   }
+}
+
+/* Dark Mode Styles */
+:global(.dark) .users__title {
+   color: #f1f5f9;
+}
+
+:global(.dark) .users__subtitle {
+   color: #94a3b8;
+}
+
+:global(.dark) .users__select {
+   background-color: #1e293b;
+   border-color: #334155;
+   color: #f1f5f9;
+}
+
+:global(.dark) .users__userName {
+   color: #f1f5f9;
+}
+
+:global(.dark) .users__role {
+   background-color: #334155;
+   color: #cbd5e1;
+}
+
+:global(.dark) .userModal__title,
+:global(.dark) .userModal__userName {
+   color: #f1f5f9;
+}
+
+:global(.dark) .userModal__formLabel {
+   color: #cbd5e1;
+}
+
+:global(.dark) .userModal__message {
+   color: #94a3b8;
+}
