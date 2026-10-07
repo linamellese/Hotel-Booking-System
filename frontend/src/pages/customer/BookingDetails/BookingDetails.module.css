@@ -1,0 +1,1173 @@
+.bookingDetails {
+   max-width: 1400px;
+   padding: 20px 0;
+}
+
+.bookingDetails__error {
+   text-align: center;
+   padding: 80px 20px;
+}
+
+.bookingDetails__errorIcon {
+   font-size: 4rem;
+   margin-bottom: 24px;
+   opacity: 0.5;
+}
+
+.bookingDetails__errorTitle {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 12px;
+}
+
+.bookingDetails__errorMessage {
+   font-size: 1rem;
+   color: var(--gray-600);
+   max-width: 400px;
+   margin: 0 auto 24px;
+   line-height: 1.5;
+}
+
+.bookingDetails__errorButton {
+   display: inline-block;
+   padding: 12px 24px;
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: white;
+   background-color: var(--primary-600);
+   border-radius: var(--radius-md);
+   text-decoration: none;
+   transition: background-color 0.2s;
+}
+
+.bookingDetails__errorButton:hover {
+   background-color: var(--primary-700);
+}
+
+.bookingDetails__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-bottom: 32px;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.bookingDetails__breadcrumb {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   font-size: 0.875rem;
+   color: var(--gray-600);
+   margin-bottom: 12px;
+}
+
+.bookingDetails__breadcrumbLink {
+   color: var(--primary-600);
+   text-decoration: none;
+   transition: color 0.2s;
+}
+
+.bookingDetails__breadcrumbLink:hover {
+   color: var(--primary-700);
+   text-decoration: underline;
+}
+
+.bookingDetails__breadcrumbSeparator {
+   color: var(--gray-400);
+}
+
+.bookingDetails__breadcrumbCurrent {
+   color: var(--gray-900);
+   font-weight: 500;
+}
+
+.bookingDetails__title {
+   font-size: 2rem;
+   font-weight: 700;
+   color: var(--gray-900);
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   flex-wrap: wrap;
+}
+
+.bookingDetails__status {
+   padding: 6px 16px;
+   font-size: 0.875rem;
+   font-weight: 600;
+   border-radius: var(--radius-full);
+   display: inline-flex;
+   align-items: center;
+   gap: 6px;
+}
+
+.bookingDetails__status--green {
+   background-color: rgba(16, 185, 129, 0.1);
+   color: #10b981;
+}
+
+.bookingDetails__status--amber {
+   background-color: rgba(245, 158, 11, 0.1);
+   color: #f59e0b;
+}
+
+.bookingDetails__status--blue {
+   background-color: rgba(59, 130, 246, 0.1);
+   color: var(--primary-600);
+}
+
+.bookingDetails__status--gray {
+   background-color: rgba(107, 114, 128, 0.1);
+   color: var(--gray-600);
+}
+
+.bookingDetails__status--red {
+   background-color: rgba(239, 68, 68, 0.1);
+   color: #ef4444;
+}
+
+.bookingDetails__headerActions {
+   display: flex;
+   gap: 12px;
+   flex-wrap: wrap;
+}
+
+.bookingDetails__grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 24px;
+}
+
+.bookingDetails__column {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.bookingDetails__card {
+   padding: 24px;
+}
+
+.bookingDetails__cardHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.bookingDetails__cardTitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 0;
+}
+
+.bookingDetails__viewHotelLink {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--primary-600);
+   text-decoration: none;
+   transition: color 0.2s;
+}
+
+.bookingDetails__viewHotelLink:hover {
+   color: var(--primary-700);
+}
+
+.bookingDetails__hotelInfo {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.bookingDetails__hotelHeader {
+   display: flex;
+   gap: 20px;
+   align-items: flex-start;
+}
+
+.bookingDetails__hotelImage {
+   width: 120px;
+   height: 120px;
+   border-radius: var(--radius-lg);
+   overflow: hidden;
+   flex-shrink: 0;
+}
+
+.bookingDetails__hotelImg {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.bookingDetails__hotelPlaceholder {
+   width: 100%;
+   height: 100%;
+   background-color: var(--gray-100);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 3rem;
+}
+
+.bookingDetails__hotelName {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 4px;
+}
+
+.bookingDetails__hotelLocation {
+   font-size: 1rem;
+   color: var(--gray-600);
+   margin-bottom: 4px;
+}
+
+.bookingDetails__hotelRating {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.bookingDetails__ratingText {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+   margin-left: 4px;
+}
+
+.bookingDetails__roomInfo {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.bookingDetails__roomHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 20px;
+}
+
+.bookingDetails__roomName {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 4px;
+}
+
+.bookingDetails__roomDescription {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+   line-height: 1.5;
+}
+
+.bookingDetails__roomPrice {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--primary-600);
+   white-space: nowrap;
+}
+
+.bookingDetails__priceUnit {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-600);
+}
+
+.bookingDetails__roomFeatures {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.bookingDetails__featuresTitle {
+   font-size: 1rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 8px;
+}
+
+.bookingDetails__featuresGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+   gap: 12px;
+}
+
+.bookingDetails__feature {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 8px;
+   background-color: var(--gray-50);
+   border-radius: var(--radius-md);
+}
+
+.bookingDetails__featureIcon {
+   font-size: 1rem;
+}
+
+.bookingDetails__featureText {
+   font-size: 0.875rem;
+   color: var(--gray-700);
+}
+
+.bookingDetails__amenities {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.bookingDetails__amenitiesList {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.bookingDetails__amenity {
+   padding: 6px 12px;
+   font-size: 0.75rem;
+   color: var(--gray-700);
+   background-color: var(--gray-100);
+   border-radius: var(--radius-full);
+   display: inline-flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.bookingDetails__summary {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.bookingDetails__summaryItem {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 12px 0;
+   border-bottom: 1px solid var(--gray-200);
+}
+
+.bookingDetails__summaryItem:last-child {
+   border-bottom: none;
+}
+
+.bookingDetails__summaryLabel {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+}
+
+.bookingDetails__summaryValue {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-900);
+   text-align: right;
+   max-width: 200px;
+}
+
+.bookingDetails__priceBreakdown {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.bookingDetails__priceRow {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 8px 0;
+}
+
+.bookingDetails__priceRow:not(:last-child) {
+   border-bottom: 1px solid var(--gray-200);
+}
+
+.bookingDetails__priceLabel {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+}
+
+.bookingDetails__priceValue {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-900);
+}
+
+.bookingDetails__priceTotal {
+   padding-top: 16px;
+   border-top: 2px solid var(--gray-300);
+   margin-top: 4px;
+}
+
+.bookingDetails__priceTotal .bookingDetails__priceLabel {
+   font-size: 1rem;
+   font-weight: 600;
+   color: var(--gray-900);
+}
+
+.bookingDetails__priceTotal .bookingDetails__priceValue {
+   font-size: 1.25rem;
+   font-weight: 700;
+   color: var(--primary-600);
+}
+
+.bookingDetails__paymentInfo {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.bookingDetails__paymentStatus {
+   display: flex;
+   justify-content: center;
+}
+
+.bookingDetails__paymentStatusBadge {
+   padding: 8px 20px;
+   font-size: 0.875rem;
+   font-weight: 600;
+   border-radius: var(--radius-full);
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+
+.bookingDetails__paymentStatusBadge--paid {
+   background-color: rgba(16, 185, 129, 0.1);
+   color: #10b981;
+}
+
+.bookingDetails__paymentStatusBadge--pending {
+   background-color: rgba(245, 158, 11, 0.1);
+   color: #f59e0b;
+}
+
+.bookingDetails__paymentDetails {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.bookingDetails__paymentRow {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 8px 0;
+   border-bottom: 1px solid var(--gray-200);
+}
+
+.bookingDetails__paymentRow:last-child {
+   border-bottom: none;
+}
+
+.bookingDetails__paymentLabel {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+}
+
+.bookingDetails__paymentValue {
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: var(--gray-900);
+}
+
+.bookingDetails__supportInfo {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.bookingDetails__supportText {
+   font-size: 0.875rem;
+   color: var(--gray-600);
+   line-height: 1.5;
+}
+
+.bookingDetails__supportActions {
+   display: flex;
+   gap: 12px;
+}
+
+.bookingDetails__cancellationPolicy {
+   padding: 16px;
+   background-color: var(--gray-50);
+   border-radius: var(--radius-md);
+}
+
+.bookingDetails__policyTitle {
+   font-size: 0.875rem;
+   font-weight: 600;
+   color: var(--gray-900);
+   margin-bottom: 8px;
+}
+
+.bookingDetails__policyText {
+   font-size: 0.75rem;
+   color: var(--gray-600);
+   line-height: 1.5;
+}
+
+.bookingDetails__cancelModal,
+.bookingDetails__modifyModal {
+   padding: 8px 0;
+}
+
+.bookingDetails__cancelWarning,
+.bookingDetails__modifyText {
+   font-size: 1rem;
+   color: var(--gray-900);
+   margin-bottom: 24px;
+   text-align: center;
+}
+
+.bookingDetails__cancellationFee {
+   background-color: var(--gray-50);
+   padding: 16px;
+   border-radius: var(--radius-md);
+   margin-bottom: 24px;
+}
+
+.bookingDetails__feeText {
+   font-size: 0.875rem;
+   color: var(--gray-700);
+   text-align: center;
+}
+
+.bookingDetails__cancelActions,
+.bookingDetails__modifyActions {
+   display: flex;
+   justify-content: center;
+   gap: 12px;
+}
+
+.bookingDetails__receipt {
+   display: none;
+}
+
+/* room card */
+
+.roomCard {
+   border: none;
+   padding: 0;
+   overflow: hidden;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   cursor: pointer;
+}
+
+.roomCard:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.roomCard__image {
+   position: relative;
+   height: 200px;
+   overflow: hidden;
+}
+
+.roomCard__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.5s ease;
+}
+
+.roomCard:hover .roomCard__img {
+   transform: scale(1.05);
+}
+
+.roomCard__badge {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   background: rgba(255, 255, 255, 0.95);
+   color: #f59e0b;
+   padding: 0.5rem 0.75rem;
+   border-radius: 8px;
+   font-size: 0.875rem;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   gap: 0.25rem;
+   backdrop-filter: blur(4px);
+}
+
+.roomCard__content {
+   padding: 1.5rem;
+}
+
+.roomCard__header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+}
+
+.roomCard__numberOfBed {
+   text-align: center;
+   font-size: 0.75rem;
+   font-weight: 600;
+}
+
+.roomCard__bedType {
+   font-size: 0.875rem;
+   color: #64748b;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   background-color: #f1f5f9;
+   padding: 0.25rem 0.5rem;
+   border-radius: 16px;
+}
+
+.roomCard__title {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: #1e293b;
+   margin-bottom: 0.5rem;
+}
+
+.roomCard__location {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: 0.875rem;
+   color: #64748b;
+   margin-bottom: 1rem;
+}
+
+.roomCard__footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: auto;
+}
+
+.roomCard__price {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #2563eb;
+}
+
+.roomCard__period {
+   font-size: 0.875rem;
+   color: #64748b;
+}
+
+/* Price Breakdown */
+.priceBreakdown {
+   border-top: 1px solid #e2e8f0;
+   padding-top: 1.5rem;
+}
+
+.priceBreakdown__item {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 0.75rem;
+   font-size: 0.95rem;
+   color: #475569;
+}
+
+.priceBreakdown__total {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 1rem;
+   padding-top: 1rem;
+   border-top: 1px solid #e2e8f0;
+   font-size: 1.125rem;
+   font-weight: 600;
+   color: #1e293b;
+}
+
+/* Cancel Booking Modal */
+.bookings__cancelModalContent {
+   display: flex;
+   flex-direction: column;
+   gap: 1.25rem;
+   color: #1e293b;
+}
+
+/* Warning text */
+.bookings__cancelWarning {
+   font-size: 0.95rem;
+   font-weight: 600;
+   color: #b91c1c;
+   background-color: #fef2f2;
+   border: 1px solid #fecaca;
+   padding: 0.75rem 1rem;
+   border-radius: 0.5rem;
+}
+
+/* Booking details container */
+.bookings__cancelDetails {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+   background-color: #f8fafc;
+   border: 1px solid #e2e8f0;
+   border-radius: 0.5rem;
+   padding: 1rem;
+}
+
+/* Single detail row */
+.bookings__cancelDetail {
+   display: flex;
+   justify-content: space-between;
+   gap: 1rem;
+   font-size: 0.875rem;
+   line-height: 1.4;
+}
+
+/* Label */
+.bookings__cancelLabel {
+   font-weight: 600;
+   color: #475569;
+   white-space: nowrap;
+}
+
+/* Value */
+.bookings__cancelValue {
+   color: #1e293b;
+   text-align: right;
+   word-break: break-word;
+}
+
+/* Cancellation policy section */
+.bookings__cancelPolicy {
+   background-color: #fff7ed;
+   border: 1px solid #fed7aa;
+   border-radius: 0.5rem;
+   padding: 1rem;
+}
+
+.bookings__cancelPolicyTitle {
+   font-size: 0.9rem;
+   font-weight: 700;
+   margin-bottom: 0.25rem;
+   color: #9a3412;
+}
+
+.bookings__cancelPolicyText {
+   font-size: 0.85rem;
+   color: #7c2d12;
+   line-height: 1.5;
+}
+/* ================================
+   Payment Modal Content
+================================ */
+.bookings__paymentModalContent {
+   display: flex;
+   flex-direction: column;
+   gap: 1.25rem;
+   color: #0f172a;
+}
+
+/* ================================
+   Payment Notice
+================================ */
+.bookings__paymentNotice {
+   font-size: 0.95rem;
+   font-weight: 600;
+   color: #1e40af; /* blue-800 */
+   background-color: #eff6ff; /* blue-50 */
+   border: 1px solid #bfdbfe; /* blue-200 */
+   padding: 0.75rem 1rem;
+   border-radius: 0.5rem;
+}
+
+/* ================================
+   Payment Details
+================================ */
+.bookings__paymentDetails {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+   background-color: #f8fafc;
+   border: 1px solid #e2e8f0;
+   border-radius: 0.5rem;
+   padding: 1rem;
+}
+
+.bookings__paymentDetail {
+   display: flex;
+   justify-content: space-between;
+   gap: 1rem;
+   font-size: 0.875rem;
+   line-height: 1.4;
+}
+
+.bookings__paymentLabel {
+   font-weight: 600;
+   color: #475569;
+   white-space: nowrap;
+}
+
+.bookings__paymentValue {
+   color: #0f172a;
+   text-align: right;
+   word-break: break-word;
+}
+
+/* Emphasize total row */
+.bookings__paymentDetail:nth-last-child(2) .bookings__paymentValue {
+   font-weight: 700;
+   color: #047857; /* green-700 */
+}
+
+/* Payment Policy */
+.bookings__paymentPolicy {
+   background-color: #ecfeff; /* cyan-50 */
+   border: 1px solid #67e8f9; /* cyan-300 */
+   border-radius: 0.5rem;
+   padding: 1rem;
+}
+
+.bookings__paymentPolicyTitle {
+   font-size: 0.9rem;
+   font-weight: 700;
+   margin-bottom: 0.25rem;
+   color: #155e75; /* cyan-800 */
+}
+
+.bookings__paymentPolicyText {
+   font-size: 0.85rem;
+   color: #0e7490; /* cyan-700 */
+   line-height: 1.5;
+}
+
+/* Actions */
+.bookings__paymentActions {
+   display: flex;
+   justify-content: flex-end;
+   gap: 0.75rem;
+   padding-top: 0.5rem;
+   border-top: 1px solid #e2e8f0;
+   margin-bottom: 1rem;
+}
+
+/* Action buttons */
+.bookings__cancelActions {
+   display: flex;
+   justify-content: flex-end;
+   gap: 0.75rem;
+   padding-top: 0.5rem;
+   border-top: 1px solid #e2e8f0;
+   margin-bottom: 1rem;
+}
+
+/* Block: receiptPrint */
+.receiptPrint {
+   width: 100%;
+}
+
+/* Block: receipt */
+.receipt {
+   width: 320px;
+   margin: 20px auto;
+   padding: 12px 10px;
+   background-color: #ffffff;
+   color: #000000;
+   font-family: "Courier New", monospace;
+   font-size: 12px;
+   line-height: 1.4;
+   border: 1px dashed #000;
+}
+
+/* Elements */
+.receipt__header {
+   text-align: center;
+}
+
+.receipt__title {
+   margin: 0;
+   font-size: 16px;
+   font-weight: 700;
+}
+
+.receipt__subtitle {
+   margin: 2px 0;
+   font-size: 11px;
+}
+
+.receipt__divider {
+   border-top: 1px dashed #000;
+   margin: 8px 0;
+}
+
+.receipt__row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 3px;
+}
+
+.receipt__total {
+   display: flex;
+   justify-content: space-between;
+   font-size: 14px;
+   font-weight: 700;
+}
+
+.receipt__footer {
+   text-align: center;
+   font-size: 11px;
+}
+
+.receipt__footer p {
+   margin: 3px 0;
+}
+
+/* Review Card */
+.reviewCard {
+   padding: 24px;
+   border: 1px solid var(--gray-200);
+   background-color: #ffffff;
+}
+
+.reviewCard__title {
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin-bottom: 16px;
+   color: var(--gray-900);
+}
+
+/* Stars */
+.reviewCard__stars {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   margin-bottom: 16px;
+}
+
+.reviewCard__star {
+   cursor: pointer;
+   color: #e5e7eb; /* gray-300 */
+   transition: color 0.2s, transform 0.2s;
+}
+
+.reviewCard__star:hover {
+   transform: scale(1.1);
+}
+
+.reviewCard__starActive {
+   color: #f59e0b; /* amber-500 */
+}
+
+.reviewCard__ratingText {
+   margin-left: 12px;
+   font-size: 0.875rem;
+   font-weight: 600;
+   color: var(--gray-700);
+}
+
+/* Comment box */
+.reviewCard__textarea {
+   width: 100%;
+   resize: none;
+   padding: 12px;
+   border-radius: var(--radius-md);
+   border: 1px solid var(--gray-300);
+   font-size: 0.875rem;
+   line-height: 1.5;
+   outline: none;
+}
+
+.reviewCard__textarea:focus {
+   border-color: var(--primary-600);
+   box-shadow: 0 0 0 1px var(--primary-600);
+}
+
+/* Actions */
+.reviewCard__actions {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 16px;
+}
+
+/* PRINT RULES (ONLY PRINT RECEIPT) */
+@media print {
+   body * {
+      visibility: hidden;
+   }
+
+   .receiptPrint,
+   .receiptPrint * {
+      visibility: visible;
+   }
+
+   .receiptPrint {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+   }
+
+   .receipt {
+      margin: 0;
+      border: none;
+   }
+
+   @page {
+      margin: 0;
+   }
+}
+
+@media (min-width: 1024px) {
+   .bookingDetails__grid {
+      grid-template-columns: 2fr 1fr;
+   }
+}
+
+@media (max-width: 768px) {
+   .bookingDetails__header {
+      flex-direction: column;
+   }
+
+   .bookingDetails__headerActions {
+      width: 100%;
+   }
+
+   .bookingDetails__hotelHeader {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bookingDetails__hotelImage {
+      align-self: center;
+   }
+
+   .bookingDetails__roomHeader {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .bookingDetails__featuresGrid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .bookingDetails__cancelActions,
+   .bookingDetails__modifyActions {
+      flex-direction: column;
+   }
+}
+
+:global(.dark) .bookingDetails__title,
+:global(.dark) .bookingDetails__breadcrumbCurrent,
+:global(.dark) .bookingDetails__cardTitle,
+:global(.dark) .bookingDetails__hotelName,
+:global(.dark) .bookingDetails__summaryValue,
+:global(.dark) .priceBreakdown__total,
+:global(.dark) .reviewCard__title,
+:global(.dark) .roomCard__title {
+   color: #f1f5f9;
+}
+
+:global(.dark) .bookingDetails__breadcrumbSeparator,
+:global(.dark) .bookingDetails__hotelLocation,
+:global(.dark) .bookingDetails__ratingText,
+:global(.dark) .bookingDetails__summaryLabel,
+:global(.dark) .priceBreakdown__item,
+:global(.dark) .bookingDetails__supportText,
+:global(.dark) .bookingDetails__policyText,
+:global(.dark) .roomCard__location,
+:global(.dark) .roomCard__period,
+:global(.dark) .reviewCard__ratingText {
+   color: #94a3b8;
+}
+
+:global(.dark) .bookingDetails__card,
+:global(.dark) .roomCard,
+:global(.dark) .reviewCard {
+   background: #1e293b;
+   border-color: #334155;
+}
+
+:global(.dark) .bookingDetails__summaryItem,
+:global(.dark) .priceBreakdown,
+:global(.dark) .priceBreakdown__total,
+:global(.dark) .bookingDetails__paymentRow {
+   border-color: #334155;
+}
+
+:global(.dark) .bookingDetails__feature,
+:global(.dark) .bookingDetails__amenity,
+:global(.dark) .bookingDetails__cancellationPolicy,
+:global(.dark) .roomCard__bedType {
+   background-color: #334155;
+   color: #cbd5e1;
+}
+
+:global(.dark) .reviewCard__textarea {
+   background-color: #111827;
+   border-color: #334155;
+   color: #f1f5f9;
+}
+
+:global(.dark) .reviewCard__star {
+   color: #475569;
+}
+
+/* Modals Dark Mode */
+:global(.dark) .bookings__cancelModalContent,
+:global(.dark) .bookings__paymentModalContent {
+   color: #e2e8f0;
+}
+
+:global(.dark) .bookings__cancelWarning {
+   background-color: #450a0a;
+   border-color: #7f1d1d;
+   color: #fecaca;
+}
+
+:global(.dark) .bookings__paymentNotice {
+   background-color: #1e3a8a;
+   border-color: #1e40af;
+   color: #dbeafe;
+}
+
+:global(.dark) .bookings__cancelDetails,
+:global(.dark) .bookings__paymentDetails {
+   background-color: #0f172a;
+   border-color: #334155;
+}
+
+:global(.dark) .bookings__cancelLabel,
+:global(.dark) .bookings__paymentLabel {
+   color: #94a3b8;
+}
+
+:global(.dark) .bookings__cancelValue,
+:global(.dark) .bookings__paymentValue {
+   color: #f1f5f9;
+}
+
+:global(.dark) .bookings__cancelPolicy {
+   background-color: #431407;
+   border-color: #7c2d12;
+}
+
+:global(.dark) .bookings__cancelPolicyTitle {
+   color: #fdba74;
+}
+
+:global(.dark) .bookings__cancelPolicyText {
+   color: #fed7aa;
+}
+
+:global(.dark) .bookings__paymentPolicy {
+   background-color: #164e63;
+   border-color: #155e75;
+}
+
+:global(.dark) .bookings__paymentPolicyTitle {
+   color: #67e8f9;
+}
+
+:global(.dark) .bookings__paymentPolicyText {
+   color: #cffafe;
+}
+
+:global(.dark) .bookings__cancelActions,
+:global(.dark) .bookings__paymentActions {
+   border-top-color: #334155;
+}
