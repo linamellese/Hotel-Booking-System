@@ -1,0 +1,541 @@
+.home {
+   min-width: 100vw;
+   min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+   position: relative;
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3")
+         center/cover;
+   color: white;
+   padding: 6.5rem 1rem 4rem;
+   text-align: center;
+}
+
+.hero__content {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.hero__title {
+   font-size: 3.5rem;
+   font-weight: 800;
+   margin-bottom: 1rem;
+   line-height: 1.2;
+}
+
+.hero__highlight {
+   color: #3b82f6;
+   display: block;
+}
+
+.hero__subtitle {
+   font-size: 1.25rem;
+   color: #e5e7eb;
+   margin-bottom: 3rem;
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* Search Box */
+.searchBox {
+   background: white;
+   border-radius: 16px;
+   padding: 2rem;
+   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+   max-width: 1000px;
+   margin: 0 auto;
+   position: relative;
+   z-index: 10;
+}
+
+.searchBox__form {
+   width: 100%;
+}
+
+/* Sections */
+.section {
+   padding: 5rem 1rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.section__header {
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.section__title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #1e293b;
+   margin-bottom: 0.75rem;
+}
+
+.section__subtitle {
+   font-size: 1.125rem;
+   color: #64748b;
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+.section__footer {
+   text-align: center;
+   margin-top: 3rem;
+}
+
+/* Cities Grid */
+.citiesGrid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1.5rem;
+}
+
+.cityCard {
+   position: relative;
+   height: 300px;
+   border-radius: 16px;
+   overflow: hidden;
+   cursor: pointer;
+   background-size: cover;
+   background-position: center;
+   transition: transform 0.3s ease;
+}
+
+.cityCard:hover {
+   transform: translateY(-8px);
+}
+
+.cityCard__overlay {
+   position: absolute;
+   inset: 0;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+   opacity: 0.8;
+   transition: opacity 0.3s ease;
+}
+
+.cityCard:hover .cityCard__overlay {
+   opacity: 0.9;
+}
+
+.cityCard__content {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: 2rem;
+   color: white;
+   z-index: 1;
+}
+
+.cityCard__name {
+   font-size: 1.75rem;
+   font-weight: 700;
+   margin-bottom: 0.5rem;
+}
+
+.cityCard__count {
+   font-size: 1rem;
+   color: #cbd5e1;
+}
+
+/* Rooms Grid */
+.roomsGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 2rem;
+}
+
+.roomCard {
+   border: none;
+   padding: 0;
+   overflow: hidden;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   cursor: pointer;
+   height: 100%;
+}
+
+.roomCard:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.roomCard__image {
+   position: relative;
+   height: 200px;
+   overflow: hidden;
+}
+
+.roomCard__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.5s ease;
+}
+
+.roomCard:hover .roomCard__img {
+   transform: scale(1.05);
+}
+
+.roomCard__badge {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   background: rgba(255, 255, 255, 0.95);
+   color: #f59e0b;
+   padding: 0.5rem 0.75rem;
+   border-radius: 8px;
+   font-size: 0.875rem;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   gap: 0.25rem;
+   backdrop-filter: blur(4px);
+}
+
+.roomCard__content {
+   padding: 1.5rem;
+}
+
+.roomCard__header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+}
+
+.roomCard__numberOfBed {
+   text-align: center;
+   font-size: 0.75rem;
+   font-weight: 600;
+}
+
+.roomCard__bedType {
+   font-size: 0.875rem;
+   color: #64748b;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   background-color: #f1f5f9;
+   padding: 0.25rem 0.5rem;
+   border-radius: 16px;
+}
+
+.roomCard__title {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: #1e293b;
+   margin-bottom: 0.5rem;
+}
+
+.roomCard__location {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: 0.875rem;
+   color: #64748b;
+   margin-bottom: 1rem;
+}
+
+.roomCard__description {
+   font-size: 0.95rem;
+   color: #475569;
+   line-height: 1.6;
+   margin-bottom: 1.5rem;
+}
+
+.roomCard__footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: auto;
+}
+
+.roomCard__price {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #1e293b;
+}
+
+.roomCard__period {
+   font-size: 0.875rem;
+   color: #64748b;
+}
+
+/* Loading Skeleton */
+.loadingGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 2rem;
+}
+
+.roomCardSkeleton {
+   background: white;
+   border-radius: 12px;
+   overflow: hidden;
+   height: 350px;
+}
+
+.roomCardSkeleton__image {
+   height: 200px;
+   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+   background-size: 200% 100%;
+   animation: loading 1.5s infinite;
+}
+
+.roomCardSkeleton__content {
+   padding: 1.5rem;
+}
+
+.roomCardSkeleton__title {
+   height: 24px;
+   width: 70%;
+   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+   background-size: 200% 100%;
+   animation: loading 1.5s infinite;
+   margin-bottom: 1rem;
+   border-radius: 4px;
+}
+
+.roomCardSkeleton__description {
+   height: 16px;
+   width: 90%;
+   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+   background-size: 200% 100%;
+   animation: loading 1.5s infinite;
+   margin-bottom: 1rem;
+   border-radius: 4px;
+}
+
+.roomCardSkeleton__price {
+   height: 24px;
+   width: 40%;
+   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+   background-size: 200% 100%;
+   animation: loading 1.5s infinite;
+   border-radius: 4px;
+}
+
+@keyframes loading {
+   0% {
+      background-position: 200% 0;
+   }
+   100% {
+      background-position: -200% 0;
+   }
+}
+
+/* Features */
+.featuresGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 2rem;
+}
+
+.featureCard {
+   text-align: center;
+   padding: 2rem;
+   background: white;
+   border-radius: 12px;
+   border: 1px solid #e2e8f0;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard__icon {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 64px;
+   height: 64px;
+   background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+   color: white;
+   border-radius: 50%;
+   margin-bottom: 1.5rem;
+}
+
+.featureCard__title {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: #1e293b;
+   margin-bottom: 1rem;
+}
+
+.featureCard__description {
+   color: #64748b;
+   line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+   background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+   color: white;
+   padding: 6rem 1rem;
+   text-align: center;
+}
+
+.cta__content {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.cta__title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+}
+
+.cta__subtitle {
+   font-size: 1.125rem;
+   color: #dbeafe;
+   margin-bottom: 2.5rem;
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.cta__buttons {
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+   .citiesGrid {
+      grid-template-columns: 1fr;
+   }
+
+   .hero__title {
+      font-size: 2.75rem;
+   }
+}
+
+@media (max-width: 768px) {
+   .hero {
+      padding: 4rem 1rem 6rem;
+   }
+
+   .hero__title {
+      font-size: 2.25rem;
+   }
+
+   .hero__subtitle {
+      font-size: 1.125rem;
+   }
+
+   .searchBox {
+      padding: 1.5rem;
+   }
+
+   .section {
+      padding: 3rem 1rem;
+   }
+
+   .section__title {
+      font-size: 2rem;
+   }
+
+   .cta {
+      padding: 4rem 1rem;
+   }
+
+   .cta__title {
+      font-size: 2rem;
+   }
+
+   .featuresGrid {
+      grid-template-columns: 1fr;
+   }
+
+   .cta__buttons {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media (max-width: 480px) {
+   .roomCard__header {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .hero__title {
+      font-size: 1.75rem;
+   }
+
+   .section__title {
+      font-size: 1.5rem;
+   }
+
+   .cta__title {
+      font-size: 1.5rem;
+   }
+}
+
+/* Dark Mode Styles */
+:global(.dark) .section__title {
+   color: #f1f5f9;
+}
+
+:global(.dark) .section__subtitle {
+   color: #94a3b8;
+}
+
+:global(.dark) .roomCard__header {
+   border-bottom-color: #334155;
+}
+
+:global(.dark) .roomCard__title {
+   color: #f1f5f9;
+}
+
+:global(.dark) .roomCard__bedType {
+   background-color: #334155;
+   color: #cbd5e1;
+}
+
+:global(.dark) .roomCard__location {
+   color: #94a3b8;
+}
+
+:global(.dark) .roomCard__price {
+   color: #f1f5f9;
+}
+
+:global(.dark) .roomCard__badge {
+   background: rgba(30, 41, 59, 0.9);
+}
+
+:global(.dark) .featureCard {
+   background-color: #1e293b;
+   border-color: #334155;
+}
+
+:global(.dark) .featureCard__title {
+   color: #f1f5f9;
+}
+
+:global(.dark) .featureCard__description {
+   color: #94a3b8;
+}
+
+:global(.dark) .roomCardSkeleton {
+   background-color: #1e293b;
+}
+
+:global(.dark) .roomCardSkeleton__image,
+:global(.dark) .roomCardSkeleton__title,
+:global(.dark) .roomCardSkeleton__description,
+:global(.dark) .roomCardSkeleton__price {
+   background: linear-gradient(90deg, #334155 25%, #475569 50%, #334155 75%);
+   background-size: 200% 100%;
+}
