@@ -664,7 +664,7 @@ const RoomDetails = () => {
 
                   {/* Map Section */}
                   {roomType.hotel?.latitude && roomType.hotel?.longitude && (
-                     <div className="mt-4 mb-4 h-48 rounded-lg overflow-hidden border border-gray-200 relative z-0">
+                     <div className={styles.hotelMap}>
                         <MapContainer
                            center={[
                               roomType.hotel.latitude,
