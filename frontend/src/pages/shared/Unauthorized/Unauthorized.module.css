@@ -1,0 +1,93 @@
+.container {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   background-color: #f9fafb;
+   text-align: center;
+}
+
+.content {
+   max-width: 500px;
+   width: 100%;
+}
+
+.icon {
+   width: 100px;
+   height: 100px;
+   margin-bottom: 2rem;
+   color: #ef4444; /* red-500 */
+   opacity: 0.9;
+}
+
+.title {
+   font-size: 2.25rem;
+   font-weight: 800;
+   color: #111827;
+   margin-bottom: 1rem;
+   line-height: 1.2;
+}
+
+.description {
+   font-size: 1.125rem;
+   color: #6b7280;
+   margin-bottom: 2rem;
+   line-height: 1.6;
+}
+
+.details {
+   background-color: white;
+   padding: 1.5rem;
+   border-radius: 0.75rem;
+   border: 1px solid #e5e7eb;
+   margin-bottom: 2rem;
+   text-align: left;
+}
+
+.detailsTitle {
+   font-size: 0.875rem;
+   font-weight: 600;
+   color: #374151;
+   margin-bottom: 0.5rem;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+
+.detailsText {
+   font-size: 0.95rem;
+   color: #4b5563;
+}
+
+.buttons {
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+}
+
+/* Dark mode support */
+:global(.dark) .container {
+   background-color: #111827;
+}
+
+:global(.dark) .title {
+   color: #f3f4f6;
+}
+
+:global(.dark) .description {
+   color: #9ca3af;
+}
+
+:global(.dark) .details {
+   background-color: #1f2937;
+   border-color: #374151;
+}
+
+:global(.dark) .detailsTitle {
+   color: #d1d5db;
+}
+
+:global(.dark) .detailsText {
+   color: #9ca3af;
+}
